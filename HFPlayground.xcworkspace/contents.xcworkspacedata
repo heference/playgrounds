@@ -10,6 +10,12 @@
          <FileRef
             location = "group:A Very Big Sum.playground">
          </FileRef>
+         <FileRef
+            location = "group:Diagonal Difference.playground">
+         </FileRef>
       </Group>
+      <FileRef
+         location = "group:README.md">
+      </FileRef>
    </Group>
 </Workspace>
