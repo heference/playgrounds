@@ -13,6 +13,9 @@
          <FileRef
             location = "group:Diagonal Difference.playground">
          </FileRef>
+         <FileRef
+            location = "group:Plus Minus.playground">
+         </FileRef>
       </Group>
       <FileRef
          location = "group:README.md">
