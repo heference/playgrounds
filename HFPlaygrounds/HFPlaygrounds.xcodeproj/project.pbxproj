@@ -1,0 +1,746 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0BBC894CE813878391BA17A3 /* Pods_HFPlaygrounds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54491B407CCC44C5B06E3FE1 /* Pods_HFPlaygrounds.framework */; };
+		1AAE727D558D1C78DE92FD04 /* Pods_HFPlaygroundsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A49402981CCFA48684BC3B3 /* Pods_HFPlaygroundsTests.framework */; };
+		ACF769D55FDE6F2DE6C2E9FA /* Pods_HFPlaygroundsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC3DD92F42DC5BBBD849C99D /* Pods_HFPlaygroundsUITests.framework */; };
+		C85D79A7230C1B4500CFEA44 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85D79A6230C1B4500CFEA44 /* AppDelegate.swift */; };
+		C85D79A9230C1B4500CFEA44 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85D79A8230C1B4500CFEA44 /* ViewController.swift */; };
+		C85D79AC230C1B4500CFEA44 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C85D79AA230C1B4500CFEA44 /* Main.storyboard */; };
+		C85D79AF230C1B4500CFEA44 /* HFPlaygrounds.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C85D79AD230C1B4500CFEA44 /* HFPlaygrounds.xcdatamodeld */; };
+		C85D79B1230C1B4600CFEA44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C85D79B0230C1B4600CFEA44 /* Assets.xcassets */; };
+		C85D79B4230C1B4600CFEA44 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C85D79B2230C1B4600CFEA44 /* LaunchScreen.storyboard */; };
+		C85D79BF230C1B4600CFEA44 /* HFPlaygroundsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85D79BE230C1B4600CFEA44 /* HFPlaygroundsTests.swift */; };
+		C85D79CA230C1B4600CFEA44 /* HFPlaygroundsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85D79C9230C1B4600CFEA44 /* HFPlaygroundsUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C85D79BB230C1B4600CFEA44 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C85D799B230C1B4500CFEA44 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C85D79A2230C1B4500CFEA44;
+			remoteInfo = HFPlaygrounds;
+		};
+		C85D79C6230C1B4600CFEA44 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C85D799B230C1B4500CFEA44 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C85D79A2230C1B4500CFEA44;
+			remoteInfo = HFPlaygrounds;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		19B9C0E74BA58AE397CEE655 /* Pods-HFPlaygrounds.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HFPlaygrounds.debug.xcconfig"; path = "Target Support Files/Pods-HFPlaygrounds/Pods-HFPlaygrounds.debug.xcconfig"; sourceTree = "<group>"; };
+		3003825BD9AD4AAE47784C9A /* Pods-HFPlaygroundsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HFPlaygroundsUITests.release.xcconfig"; path = "Target Support Files/Pods-HFPlaygroundsUITests/Pods-HFPlaygroundsUITests.release.xcconfig"; sourceTree = "<group>"; };
+		54491B407CCC44C5B06E3FE1 /* Pods_HFPlaygrounds.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HFPlaygrounds.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B6B6C1D24D24159775A9BD6 /* Pods-HFPlaygroundsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HFPlaygroundsTests.release.xcconfig"; path = "Target Support Files/Pods-HFPlaygroundsTests/Pods-HFPlaygroundsTests.release.xcconfig"; sourceTree = "<group>"; };
+		79E79BEF33E6DC9FE35781BE /* Pods-HFPlaygrounds.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HFPlaygrounds.release.xcconfig"; path = "Target Support Files/Pods-HFPlaygrounds/Pods-HFPlaygrounds.release.xcconfig"; sourceTree = "<group>"; };
+		9A49402981CCFA48684BC3B3 /* Pods_HFPlaygroundsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HFPlaygroundsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C85D79A3230C1B4500CFEA44 /* HFPlaygrounds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HFPlaygrounds.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C85D79A6230C1B4500CFEA44 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C85D79A8230C1B4500CFEA44 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C85D79AB230C1B4500CFEA44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C85D79AE230C1B4500CFEA44 /* HFPlaygrounds.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HFPlaygrounds.xcdatamodel; sourceTree = "<group>"; };
+		C85D79B0230C1B4600CFEA44 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C85D79B3230C1B4600CFEA44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C85D79B5230C1B4600CFEA44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C85D79BA230C1B4600CFEA44 /* HFPlaygroundsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HFPlaygroundsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C85D79BE230C1B4600CFEA44 /* HFPlaygroundsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HFPlaygroundsTests.swift; sourceTree = "<group>"; };
+		C85D79C0230C1B4600CFEA44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C85D79C5230C1B4600CFEA44 /* HFPlaygroundsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HFPlaygroundsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C85D79C9230C1B4600CFEA44 /* HFPlaygroundsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HFPlaygroundsUITests.swift; sourceTree = "<group>"; };
+		C85D79CB230C1B4600CFEA44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C85D79D7230C1C6000CFEA44 /* RxForm.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = RxForm.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		CC3DD92F42DC5BBBD849C99D /* Pods_HFPlaygroundsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HFPlaygroundsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFC7047C5E004EE9AF74E732 /* Pods-HFPlaygroundsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HFPlaygroundsTests.debug.xcconfig"; path = "Target Support Files/Pods-HFPlaygroundsTests/Pods-HFPlaygroundsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F5015C49A0E78FA7B9F2CE54 /* Pods-HFPlaygroundsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HFPlaygroundsUITests.debug.xcconfig"; path = "Target Support Files/Pods-HFPlaygroundsUITests/Pods-HFPlaygroundsUITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C85D79A0230C1B4500CFEA44 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BBC894CE813878391BA17A3 /* Pods_HFPlaygrounds.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C85D79B7230C1B4600CFEA44 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AAE727D558D1C78DE92FD04 /* Pods_HFPlaygroundsTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C85D79C2230C1B4600CFEA44 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACF769D55FDE6F2DE6C2E9FA /* Pods_HFPlaygroundsUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C85D799A230C1B4500CFEA44 = {
+			isa = PBXGroup;
+			children = (
+				C85D79D7230C1C6000CFEA44 /* RxForm.playground */,
+				C85D79A5230C1B4500CFEA44 /* HFPlaygrounds */,
+				C85D79BD230C1B4600CFEA44 /* HFPlaygroundsTests */,
+				C85D79C8230C1B4600CFEA44 /* HFPlaygroundsUITests */,
+				C85D79A4230C1B4500CFEA44 /* Products */,
+				FA51B9E4C30BD3D692F5652A /* Pods */,
+				FC1E6988748D782225797D5B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C85D79A4230C1B4500CFEA44 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C85D79A3230C1B4500CFEA44 /* HFPlaygrounds.app */,
+				C85D79BA230C1B4600CFEA44 /* HFPlaygroundsTests.xctest */,
+				C85D79C5230C1B4600CFEA44 /* HFPlaygroundsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C85D79A5230C1B4500CFEA44 /* HFPlaygrounds */ = {
+			isa = PBXGroup;
+			children = (
+				C85D79A6230C1B4500CFEA44 /* AppDelegate.swift */,
+				C85D79A8230C1B4500CFEA44 /* ViewController.swift */,
+				C85D79AA230C1B4500CFEA44 /* Main.storyboard */,
+				C85D79B0230C1B4600CFEA44 /* Assets.xcassets */,
+				C85D79B2230C1B4600CFEA44 /* LaunchScreen.storyboard */,
+				C85D79B5230C1B4600CFEA44 /* Info.plist */,
+				C85D79AD230C1B4500CFEA44 /* HFPlaygrounds.xcdatamodeld */,
+			);
+			path = HFPlaygrounds;
+			sourceTree = "<group>";
+		};
+		C85D79BD230C1B4600CFEA44 /* HFPlaygroundsTests */ = {
+			isa = PBXGroup;
+			children = (
+				C85D79BE230C1B4600CFEA44 /* HFPlaygroundsTests.swift */,
+				C85D79C0230C1B4600CFEA44 /* Info.plist */,
+			);
+			path = HFPlaygroundsTests;
+			sourceTree = "<group>";
+		};
+		C85D79C8230C1B4600CFEA44 /* HFPlaygroundsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C85D79C9230C1B4600CFEA44 /* HFPlaygroundsUITests.swift */,
+				C85D79CB230C1B4600CFEA44 /* Info.plist */,
+			);
+			path = HFPlaygroundsUITests;
+			sourceTree = "<group>";
+		};
+		FA51B9E4C30BD3D692F5652A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				19B9C0E74BA58AE397CEE655 /* Pods-HFPlaygrounds.debug.xcconfig */,
+				79E79BEF33E6DC9FE35781BE /* Pods-HFPlaygrounds.release.xcconfig */,
+				DFC7047C5E004EE9AF74E732 /* Pods-HFPlaygroundsTests.debug.xcconfig */,
+				6B6B6C1D24D24159775A9BD6 /* Pods-HFPlaygroundsTests.release.xcconfig */,
+				F5015C49A0E78FA7B9F2CE54 /* Pods-HFPlaygroundsUITests.debug.xcconfig */,
+				3003825BD9AD4AAE47784C9A /* Pods-HFPlaygroundsUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FC1E6988748D782225797D5B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				54491B407CCC44C5B06E3FE1 /* Pods_HFPlaygrounds.framework */,
+				9A49402981CCFA48684BC3B3 /* Pods_HFPlaygroundsTests.framework */,
+				CC3DD92F42DC5BBBD849C99D /* Pods_HFPlaygroundsUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C85D79A2230C1B4500CFEA44 /* HFPlaygrounds */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C85D79CE230C1B4600CFEA44 /* Build configuration list for PBXNativeTarget "HFPlaygrounds" */;
+			buildPhases = (
+				635D0BD9A477A3D6799D2AE8 /* [CP] Check Pods Manifest.lock */,
+				C85D799F230C1B4500CFEA44 /* Sources */,
+				C85D79A0230C1B4500CFEA44 /* Frameworks */,
+				C85D79A1230C1B4500CFEA44 /* Resources */,
+				DB37ED5B06442CA70894A9B0 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HFPlaygrounds;
+			productName = HFPlaygrounds;
+			productReference = C85D79A3230C1B4500CFEA44 /* HFPlaygrounds.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C85D79B9230C1B4600CFEA44 /* HFPlaygroundsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C85D79D1230C1B4600CFEA44 /* Build configuration list for PBXNativeTarget "HFPlaygroundsTests" */;
+			buildPhases = (
+				23ADD1BFDD667FF97DE7E630 /* [CP] Check Pods Manifest.lock */,
+				C85D79B6230C1B4600CFEA44 /* Sources */,
+				C85D79B7230C1B4600CFEA44 /* Frameworks */,
+				C85D79B8230C1B4600CFEA44 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C85D79BC230C1B4600CFEA44 /* PBXTargetDependency */,
+			);
+			name = HFPlaygroundsTests;
+			productName = HFPlaygroundsTests;
+			productReference = C85D79BA230C1B4600CFEA44 /* HFPlaygroundsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C85D79C4230C1B4600CFEA44 /* HFPlaygroundsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C85D79D4230C1B4600CFEA44 /* Build configuration list for PBXNativeTarget "HFPlaygroundsUITests" */;
+			buildPhases = (
+				9A2418619B72E7E3CD3DB8D0 /* [CP] Check Pods Manifest.lock */,
+				C85D79C1230C1B4600CFEA44 /* Sources */,
+				C85D79C2230C1B4600CFEA44 /* Frameworks */,
+				C85D79C3230C1B4600CFEA44 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C85D79C7230C1B4600CFEA44 /* PBXTargetDependency */,
+			);
+			name = HFPlaygroundsUITests;
+			productName = HFPlaygroundsUITests;
+			productReference = C85D79C5230C1B4600CFEA44 /* HFPlaygroundsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C85D799B230C1B4500CFEA44 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = sfp;
+				TargetAttributes = {
+					C85D79A2230C1B4500CFEA44 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					C85D79B9230C1B4600CFEA44 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = C85D79A2230C1B4500CFEA44;
+					};
+					C85D79C4230C1B4600CFEA44 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = C85D79A2230C1B4500CFEA44;
+					};
+				};
+			};
+			buildConfigurationList = C85D799E230C1B4500CFEA44 /* Build configuration list for PBXProject "HFPlaygrounds" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C85D799A230C1B4500CFEA44;
+			productRefGroup = C85D79A4230C1B4500CFEA44 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C85D79A2230C1B4500CFEA44 /* HFPlaygrounds */,
+				C85D79B9230C1B4600CFEA44 /* HFPlaygroundsTests */,
+				C85D79C4230C1B4600CFEA44 /* HFPlaygroundsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C85D79A1230C1B4500CFEA44 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C85D79B4230C1B4600CFEA44 /* LaunchScreen.storyboard in Resources */,
+				C85D79B1230C1B4600CFEA44 /* Assets.xcassets in Resources */,
+				C85D79AC230C1B4500CFEA44 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C85D79B8230C1B4600CFEA44 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C85D79C3230C1B4600CFEA44 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		23ADD1BFDD667FF97DE7E630 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HFPlaygroundsTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		635D0BD9A477A3D6799D2AE8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HFPlaygrounds-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9A2418619B72E7E3CD3DB8D0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HFPlaygroundsUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DB37ED5B06442CA70894A9B0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HFPlaygrounds/Pods-HFPlaygrounds-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HFPlaygrounds/Pods-HFPlaygrounds-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HFPlaygrounds/Pods-HFPlaygrounds-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C85D799F230C1B4500CFEA44 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C85D79AF230C1B4500CFEA44 /* HFPlaygrounds.xcdatamodeld in Sources */,
+				C85D79A9230C1B4500CFEA44 /* ViewController.swift in Sources */,
+				C85D79A7230C1B4500CFEA44 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C85D79B6230C1B4600CFEA44 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C85D79BF230C1B4600CFEA44 /* HFPlaygroundsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C85D79C1230C1B4600CFEA44 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C85D79CA230C1B4600CFEA44 /* HFPlaygroundsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C85D79BC230C1B4600CFEA44 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C85D79A2230C1B4500CFEA44 /* HFPlaygrounds */;
+			targetProxy = C85D79BB230C1B4600CFEA44 /* PBXContainerItemProxy */;
+		};
+		C85D79C7230C1B4600CFEA44 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C85D79A2230C1B4500CFEA44 /* HFPlaygrounds */;
+			targetProxy = C85D79C6230C1B4600CFEA44 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C85D79AA230C1B4500CFEA44 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C85D79AB230C1B4500CFEA44 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C85D79B2230C1B4600CFEA44 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C85D79B3230C1B4600CFEA44 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C85D79CC230C1B4600CFEA44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C85D79CD230C1B4600CFEA44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C85D79CF230C1B4600CFEA44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19B9C0E74BA58AE397CEE655 /* Pods-HFPlaygrounds.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5BDUPFPQ4R;
+				INFOPLIST_FILE = HFPlaygrounds/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sfp.HFPlaygrounds;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C85D79D0230C1B4600CFEA44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79E79BEF33E6DC9FE35781BE /* Pods-HFPlaygrounds.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5BDUPFPQ4R;
+				INFOPLIST_FILE = HFPlaygrounds/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sfp.HFPlaygrounds;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C85D79D2230C1B4600CFEA44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DFC7047C5E004EE9AF74E732 /* Pods-HFPlaygroundsTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5BDUPFPQ4R;
+				INFOPLIST_FILE = HFPlaygroundsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sfp.HFPlaygroundsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HFPlaygrounds.app/HFPlaygrounds";
+			};
+			name = Debug;
+		};
+		C85D79D3230C1B4600CFEA44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B6B6C1D24D24159775A9BD6 /* Pods-HFPlaygroundsTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5BDUPFPQ4R;
+				INFOPLIST_FILE = HFPlaygroundsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sfp.HFPlaygroundsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HFPlaygrounds.app/HFPlaygrounds";
+			};
+			name = Release;
+		};
+		C85D79D5230C1B4600CFEA44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5015C49A0E78FA7B9F2CE54 /* Pods-HFPlaygroundsUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5BDUPFPQ4R;
+				INFOPLIST_FILE = HFPlaygroundsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sfp.HFPlaygroundsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HFPlaygrounds;
+			};
+			name = Debug;
+		};
+		C85D79D6230C1B4600CFEA44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3003825BD9AD4AAE47784C9A /* Pods-HFPlaygroundsUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5BDUPFPQ4R;
+				INFOPLIST_FILE = HFPlaygroundsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sfp.HFPlaygroundsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HFPlaygrounds;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C85D799E230C1B4500CFEA44 /* Build configuration list for PBXProject "HFPlaygrounds" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C85D79CC230C1B4600CFEA44 /* Debug */,
+				C85D79CD230C1B4600CFEA44 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C85D79CE230C1B4600CFEA44 /* Build configuration list for PBXNativeTarget "HFPlaygrounds" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C85D79CF230C1B4600CFEA44 /* Debug */,
+				C85D79D0230C1B4600CFEA44 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C85D79D1230C1B4600CFEA44 /* Build configuration list for PBXNativeTarget "HFPlaygroundsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C85D79D2230C1B4600CFEA44 /* Debug */,
+				C85D79D3230C1B4600CFEA44 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C85D79D4230C1B4600CFEA44 /* Build configuration list for PBXNativeTarget "HFPlaygroundsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C85D79D5230C1B4600CFEA44 /* Debug */,
+				C85D79D6230C1B4600CFEA44 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C85D79AD230C1B4500CFEA44 /* HFPlaygrounds.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C85D79AE230C1B4500CFEA44 /* HFPlaygrounds.xcdatamodel */,
+			);
+			currentVersion = C85D79AE230C1B4500CFEA44 /* HFPlaygrounds.xcdatamodel */;
+			path = HFPlaygrounds.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = C85D799B230C1B4500CFEA44 /* Project object */;
+}
