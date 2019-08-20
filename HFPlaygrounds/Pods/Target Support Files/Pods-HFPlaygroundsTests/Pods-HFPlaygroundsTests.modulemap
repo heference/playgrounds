@@ -1,0 +1,6 @@
+framework module Pods_HFPlaygroundsTests {
+  umbrella header "Pods-HFPlaygroundsTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
