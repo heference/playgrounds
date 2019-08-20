@@ -6,6 +6,9 @@ import RxCocoa
 import PlaygroundSupport
 
 class MyViewController : UIViewController {
+    
+    var disposeBag = DisposeBag()
+    
     override func loadView() {
         let view = UIView()
         view.backgroundColor = .white
@@ -24,11 +27,12 @@ class MyViewController : UIViewController {
         view.addSubview(button)
         
         button.rx.tap
-            .map {
+            .subscribe(onNext: {
                 print("tap")
-            }.subscribe(onNext: {  in
-                <#code#>
-            }
+            }, onCompleted: {
+                print("onCompleted")
+            })
+            .disposed(by: disposeBag)
         
         
     }
