@@ -59,6 +59,8 @@
 		C85D79C9230C1B4600CFEA44 /* HFPlaygroundsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HFPlaygroundsUITests.swift; sourceTree = "<group>"; };
 		C85D79CB230C1B4600CFEA44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C85D79D7230C1C6000CFEA44 /* RxForm.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = RxForm.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		C85D79D8230D605B00CFEA44 /* RxTableView.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = RxTableView.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		C85D79D9230D649A00CFEA44 /* RxTutorial.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = RxTutorial.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		CC3DD92F42DC5BBBD849C99D /* Pods_HFPlaygroundsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HFPlaygroundsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFC7047C5E004EE9AF74E732 /* Pods-HFPlaygroundsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HFPlaygroundsTests.debug.xcconfig"; path = "Target Support Files/Pods-HFPlaygroundsTests/Pods-HFPlaygroundsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F5015C49A0E78FA7B9F2CE54 /* Pods-HFPlaygroundsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HFPlaygroundsUITests.debug.xcconfig"; path = "Target Support Files/Pods-HFPlaygroundsUITests/Pods-HFPlaygroundsUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -95,6 +97,8 @@
 		C85D799A230C1B4500CFEA44 = {
 			isa = PBXGroup;
 			children = (
+				C85D79D9230D649A00CFEA44 /* RxTutorial.playground */,
+				C85D79D8230D605B00CFEA44 /* RxTableView.playground */,
 				C85D79D7230C1C6000CFEA44 /* RxForm.playground */,
 				C85D79A5230C1B4500CFEA44 /* HFPlaygrounds */,
 				C85D79BD230C1B4600CFEA44 /* HFPlaygroundsTests */,
