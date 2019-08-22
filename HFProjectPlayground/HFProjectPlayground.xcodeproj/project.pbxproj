@@ -3,16 +3,17 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		081447C34D5AAFA8C10281A3 /* Pods_HFProjectPlayground.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD5DC52FC974584620B125D5 /* Pods_HFProjectPlayground.framework */; };
 		6CF8EC25DEE71BCA82E6FA88 /* Pods_HFProjectPlaygroundUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9E53D076EE85A4866AC98DC /* Pods_HFProjectPlaygroundUITests.framework */; };
 		C33B25071F7B753ACAB8746F /* Pods_HFProjectPlaygroundTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB45D456A46BE36B76CBAF77 /* Pods_HFProjectPlaygroundTests.framework */; };
+		DF2A84DB230E84EE00C9393B /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2A84DA230E84EE00C9393B /* MainView.swift */; };
+		DF2A84DD230E858F00C9393B /* MainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2A84DC230E858F00C9393B /* MainCell.swift */; };
 		DFCC2CC5230E165B001688ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFCC2CC4230E165B001688ED /* AppDelegate.swift */; };
-		DFCC2CC7230E165B001688ED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFCC2CC6230E165B001688ED /* ViewController.swift */; };
-		DFCC2CCA230E165B001688ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFCC2CC8230E165B001688ED /* Main.storyboard */; };
+		DFCC2CC7230E165B001688ED /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFCC2CC6230E165B001688ED /* MainViewController.swift */; };
 		DFCC2CCD230E165B001688ED /* HFProjectPlayground.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DFCC2CCB230E165B001688ED /* HFProjectPlayground.xcdatamodeld */; };
 		DFCC2CCF230E165C001688ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFCC2CCE230E165C001688ED /* Assets.xcassets */; };
 		DFCC2CD2230E165C001688ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFCC2CD0230E165C001688ED /* LaunchScreen.storyboard */; };
@@ -44,10 +45,11 @@
 		8690B60D363A512DF8EC1F0B /* Pods-HFProjectPlaygroundUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HFProjectPlaygroundUITests.release.xcconfig"; path = "Target Support Files/Pods-HFProjectPlaygroundUITests/Pods-HFProjectPlaygroundUITests.release.xcconfig"; sourceTree = "<group>"; };
 		92D8B20185C23F089F93B1EA /* Pods-HFProjectPlaygroundTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HFProjectPlaygroundTests.release.xcconfig"; path = "Target Support Files/Pods-HFProjectPlaygroundTests/Pods-HFProjectPlaygroundTests.release.xcconfig"; sourceTree = "<group>"; };
 		CD5DC52FC974584620B125D5 /* Pods_HFProjectPlayground.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HFProjectPlayground.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF2A84DA230E84EE00C9393B /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		DF2A84DC230E858F00C9393B /* MainCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCell.swift; sourceTree = "<group>"; };
 		DFCC2CC1230E165B001688ED /* HFProjectPlayground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HFProjectPlayground.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFCC2CC4230E165B001688ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DFCC2CC6230E165B001688ED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		DFCC2CC9230E165B001688ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DFCC2CC6230E165B001688ED /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		DFCC2CCC230E165B001688ED /* HFProjectPlayground.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HFProjectPlayground.xcdatamodel; sourceTree = "<group>"; };
 		DFCC2CCE230E165C001688ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DFCC2CD1230E165C001688ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -101,7 +103,6 @@
 				1B608663F879CC6E4AF38BDF /* Pods-HFProjectPlaygroundUITests.debug.xcconfig */,
 				8690B60D363A512DF8EC1F0B /* Pods-HFProjectPlaygroundUITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -113,6 +114,16 @@
 				F9E53D076EE85A4866AC98DC /* Pods_HFProjectPlaygroundUITests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DF2A84DE230E864300C9393B /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				DFCC2CC6230E165B001688ED /* MainViewController.swift */,
+				DF2A84DA230E84EE00C9393B /* MainView.swift */,
+				DF2A84DC230E858F00C9393B /* MainCell.swift */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 		DFCC2CB8230E165B001688ED = {
@@ -140,9 +151,8 @@
 		DFCC2CC3230E165B001688ED /* HFProjectPlayground */ = {
 			isa = PBXGroup;
 			children = (
+				DF2A84DE230E864300C9393B /* Main */,
 				DFCC2CC4230E165B001688ED /* AppDelegate.swift */,
-				DFCC2CC6230E165B001688ED /* ViewController.swift */,
-				DFCC2CC8230E165B001688ED /* Main.storyboard */,
 				DFCC2CCE230E165C001688ED /* Assets.xcassets */,
 				DFCC2CD0230E165C001688ED /* LaunchScreen.storyboard */,
 				DFCC2CD3230E165C001688ED /* Info.plist */,
@@ -279,7 +289,6 @@
 			files = (
 				DFCC2CD2230E165C001688ED /* LaunchScreen.storyboard in Resources */,
 				DFCC2CCF230E165C001688ED /* Assets.xcassets in Resources */,
-				DFCC2CCA230E165B001688ED /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -391,8 +400,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				DFCC2CCD230E165B001688ED /* HFProjectPlayground.xcdatamodeld in Sources */,
-				DFCC2CC7230E165B001688ED /* ViewController.swift in Sources */,
+				DF2A84DB230E84EE00C9393B /* MainView.swift in Sources */,
+				DFCC2CC7230E165B001688ED /* MainViewController.swift in Sources */,
 				DFCC2CC5230E165B001688ED /* AppDelegate.swift in Sources */,
+				DF2A84DD230E858F00C9393B /* MainCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,14 +439,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		DFCC2CC8230E165B001688ED /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DFCC2CC9230E165B001688ED /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		DFCC2CD0230E165C001688ED /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

@@ -7,12 +7,19 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
-class ViewController: UIViewController {
+class MainViewController: UIViewController {
+    
+    let mainView = MainView()
+    var disposeBag = DisposeBag()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        mainView.layout(superView: self.view)
     }
 
 
