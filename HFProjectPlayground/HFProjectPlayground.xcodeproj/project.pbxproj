@@ -1,0 +1,745 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		081447C34D5AAFA8C10281A3 /* Pods_HFProjectPlayground.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD5DC52FC974584620B125D5 /* Pods_HFProjectPlayground.framework */; };
+		6CF8EC25DEE71BCA82E6FA88 /* Pods_HFProjectPlaygroundUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9E53D076EE85A4866AC98DC /* Pods_HFProjectPlaygroundUITests.framework */; };
+		C33B25071F7B753ACAB8746F /* Pods_HFProjectPlaygroundTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB45D456A46BE36B76CBAF77 /* Pods_HFProjectPlaygroundTests.framework */; };
+		DFCC2CC5230E165B001688ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFCC2CC4230E165B001688ED /* AppDelegate.swift */; };
+		DFCC2CC7230E165B001688ED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFCC2CC6230E165B001688ED /* ViewController.swift */; };
+		DFCC2CCA230E165B001688ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFCC2CC8230E165B001688ED /* Main.storyboard */; };
+		DFCC2CCD230E165B001688ED /* HFProjectPlayground.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DFCC2CCB230E165B001688ED /* HFProjectPlayground.xcdatamodeld */; };
+		DFCC2CCF230E165C001688ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFCC2CCE230E165C001688ED /* Assets.xcassets */; };
+		DFCC2CD2230E165C001688ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFCC2CD0230E165C001688ED /* LaunchScreen.storyboard */; };
+		DFCC2CDD230E165C001688ED /* HFProjectPlaygroundTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFCC2CDC230E165C001688ED /* HFProjectPlaygroundTests.swift */; };
+		DFCC2CE8230E165C001688ED /* HFProjectPlaygroundUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFCC2CE7230E165C001688ED /* HFProjectPlaygroundUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DFCC2CD9230E165C001688ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DFCC2CB9230E165B001688ED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DFCC2CC0230E165B001688ED;
+			remoteInfo = HFProjectPlayground;
+		};
+		DFCC2CE4230E165C001688ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DFCC2CB9230E165B001688ED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DFCC2CC0230E165B001688ED;
+			remoteInfo = HFProjectPlayground;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1B608663F879CC6E4AF38BDF /* Pods-HFProjectPlaygroundUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HFProjectPlaygroundUITests.debug.xcconfig"; path = "Target Support Files/Pods-HFProjectPlaygroundUITests/Pods-HFProjectPlaygroundUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		38E10521B621580908AD2246 /* Pods-HFProjectPlaygroundTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HFProjectPlaygroundTests.debug.xcconfig"; path = "Target Support Files/Pods-HFProjectPlaygroundTests/Pods-HFProjectPlaygroundTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4FB900212B482967F13E441B /* Pods-HFProjectPlayground.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HFProjectPlayground.debug.xcconfig"; path = "Target Support Files/Pods-HFProjectPlayground/Pods-HFProjectPlayground.debug.xcconfig"; sourceTree = "<group>"; };
+		8690B60D363A512DF8EC1F0B /* Pods-HFProjectPlaygroundUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HFProjectPlaygroundUITests.release.xcconfig"; path = "Target Support Files/Pods-HFProjectPlaygroundUITests/Pods-HFProjectPlaygroundUITests.release.xcconfig"; sourceTree = "<group>"; };
+		92D8B20185C23F089F93B1EA /* Pods-HFProjectPlaygroundTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HFProjectPlaygroundTests.release.xcconfig"; path = "Target Support Files/Pods-HFProjectPlaygroundTests/Pods-HFProjectPlaygroundTests.release.xcconfig"; sourceTree = "<group>"; };
+		CD5DC52FC974584620B125D5 /* Pods_HFProjectPlayground.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HFProjectPlayground.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFCC2CC1230E165B001688ED /* HFProjectPlayground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HFProjectPlayground.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFCC2CC4230E165B001688ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DFCC2CC6230E165B001688ED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DFCC2CC9230E165B001688ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DFCC2CCC230E165B001688ED /* HFProjectPlayground.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HFProjectPlayground.xcdatamodel; sourceTree = "<group>"; };
+		DFCC2CCE230E165C001688ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DFCC2CD1230E165C001688ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DFCC2CD3230E165C001688ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DFCC2CD8230E165C001688ED /* HFProjectPlaygroundTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HFProjectPlaygroundTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFCC2CDC230E165C001688ED /* HFProjectPlaygroundTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HFProjectPlaygroundTests.swift; sourceTree = "<group>"; };
+		DFCC2CDE230E165C001688ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DFCC2CE3230E165C001688ED /* HFProjectPlaygroundUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HFProjectPlaygroundUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFCC2CE7230E165C001688ED /* HFProjectPlaygroundUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HFProjectPlaygroundUITests.swift; sourceTree = "<group>"; };
+		DFCC2CE9230E165C001688ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB45D456A46BE36B76CBAF77 /* Pods_HFProjectPlaygroundTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HFProjectPlaygroundTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EECE438A6A8D9E57941BB9A6 /* Pods-HFProjectPlayground.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HFProjectPlayground.release.xcconfig"; path = "Target Support Files/Pods-HFProjectPlayground/Pods-HFProjectPlayground.release.xcconfig"; sourceTree = "<group>"; };
+		F9E53D076EE85A4866AC98DC /* Pods_HFProjectPlaygroundUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HFProjectPlaygroundUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DFCC2CBE230E165B001688ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				081447C34D5AAFA8C10281A3 /* Pods_HFProjectPlayground.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFCC2CD5230E165C001688ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C33B25071F7B753ACAB8746F /* Pods_HFProjectPlaygroundTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFCC2CE0230E165C001688ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CF8EC25DEE71BCA82E6FA88 /* Pods_HFProjectPlaygroundUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6F426C7FD74B1BF9B15B8CAF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4FB900212B482967F13E441B /* Pods-HFProjectPlayground.debug.xcconfig */,
+				EECE438A6A8D9E57941BB9A6 /* Pods-HFProjectPlayground.release.xcconfig */,
+				38E10521B621580908AD2246 /* Pods-HFProjectPlaygroundTests.debug.xcconfig */,
+				92D8B20185C23F089F93B1EA /* Pods-HFProjectPlaygroundTests.release.xcconfig */,
+				1B608663F879CC6E4AF38BDF /* Pods-HFProjectPlaygroundUITests.debug.xcconfig */,
+				8690B60D363A512DF8EC1F0B /* Pods-HFProjectPlaygroundUITests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		DC13019319334427EC8F0F7D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CD5DC52FC974584620B125D5 /* Pods_HFProjectPlayground.framework */,
+				EB45D456A46BE36B76CBAF77 /* Pods_HFProjectPlaygroundTests.framework */,
+				F9E53D076EE85A4866AC98DC /* Pods_HFProjectPlaygroundUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DFCC2CB8230E165B001688ED = {
+			isa = PBXGroup;
+			children = (
+				DFCC2CC3230E165B001688ED /* HFProjectPlayground */,
+				DFCC2CDB230E165C001688ED /* HFProjectPlaygroundTests */,
+				DFCC2CE6230E165C001688ED /* HFProjectPlaygroundUITests */,
+				DFCC2CC2230E165B001688ED /* Products */,
+				6F426C7FD74B1BF9B15B8CAF /* Pods */,
+				DC13019319334427EC8F0F7D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DFCC2CC2230E165B001688ED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DFCC2CC1230E165B001688ED /* HFProjectPlayground.app */,
+				DFCC2CD8230E165C001688ED /* HFProjectPlaygroundTests.xctest */,
+				DFCC2CE3230E165C001688ED /* HFProjectPlaygroundUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DFCC2CC3230E165B001688ED /* HFProjectPlayground */ = {
+			isa = PBXGroup;
+			children = (
+				DFCC2CC4230E165B001688ED /* AppDelegate.swift */,
+				DFCC2CC6230E165B001688ED /* ViewController.swift */,
+				DFCC2CC8230E165B001688ED /* Main.storyboard */,
+				DFCC2CCE230E165C001688ED /* Assets.xcassets */,
+				DFCC2CD0230E165C001688ED /* LaunchScreen.storyboard */,
+				DFCC2CD3230E165C001688ED /* Info.plist */,
+				DFCC2CCB230E165B001688ED /* HFProjectPlayground.xcdatamodeld */,
+			);
+			path = HFProjectPlayground;
+			sourceTree = "<group>";
+		};
+		DFCC2CDB230E165C001688ED /* HFProjectPlaygroundTests */ = {
+			isa = PBXGroup;
+			children = (
+				DFCC2CDC230E165C001688ED /* HFProjectPlaygroundTests.swift */,
+				DFCC2CDE230E165C001688ED /* Info.plist */,
+			);
+			path = HFProjectPlaygroundTests;
+			sourceTree = "<group>";
+		};
+		DFCC2CE6230E165C001688ED /* HFProjectPlaygroundUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DFCC2CE7230E165C001688ED /* HFProjectPlaygroundUITests.swift */,
+				DFCC2CE9230E165C001688ED /* Info.plist */,
+			);
+			path = HFProjectPlaygroundUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DFCC2CC0230E165B001688ED /* HFProjectPlayground */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DFCC2CEC230E165C001688ED /* Build configuration list for PBXNativeTarget "HFProjectPlayground" */;
+			buildPhases = (
+				75E278A16D68F99FD6F4D274 /* [CP] Check Pods Manifest.lock */,
+				DFCC2CBD230E165B001688ED /* Sources */,
+				DFCC2CBE230E165B001688ED /* Frameworks */,
+				DFCC2CBF230E165B001688ED /* Resources */,
+				C0404AE51E51F4EB03230298 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HFProjectPlayground;
+			productName = HFProjectPlayground;
+			productReference = DFCC2CC1230E165B001688ED /* HFProjectPlayground.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DFCC2CD7230E165C001688ED /* HFProjectPlaygroundTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DFCC2CEF230E165C001688ED /* Build configuration list for PBXNativeTarget "HFProjectPlaygroundTests" */;
+			buildPhases = (
+				F6A15F4A592D38F1674CCD68 /* [CP] Check Pods Manifest.lock */,
+				DFCC2CD4230E165C001688ED /* Sources */,
+				DFCC2CD5230E165C001688ED /* Frameworks */,
+				DFCC2CD6230E165C001688ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DFCC2CDA230E165C001688ED /* PBXTargetDependency */,
+			);
+			name = HFProjectPlaygroundTests;
+			productName = HFProjectPlaygroundTests;
+			productReference = DFCC2CD8230E165C001688ED /* HFProjectPlaygroundTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DFCC2CE2230E165C001688ED /* HFProjectPlaygroundUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DFCC2CF2230E165C001688ED /* Build configuration list for PBXNativeTarget "HFProjectPlaygroundUITests" */;
+			buildPhases = (
+				6076E56082546EB1965E02C6 /* [CP] Check Pods Manifest.lock */,
+				DFCC2CDF230E165C001688ED /* Sources */,
+				DFCC2CE0230E165C001688ED /* Frameworks */,
+				DFCC2CE1230E165C001688ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DFCC2CE5230E165C001688ED /* PBXTargetDependency */,
+			);
+			name = HFProjectPlaygroundUITests;
+			productName = HFProjectPlaygroundUITests;
+			productReference = DFCC2CE3230E165C001688ED /* HFProjectPlaygroundUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DFCC2CB9230E165B001688ED /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = sfp;
+				TargetAttributes = {
+					DFCC2CC0230E165B001688ED = {
+						CreatedOnToolsVersion = 10.3;
+					};
+					DFCC2CD7230E165C001688ED = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = DFCC2CC0230E165B001688ED;
+					};
+					DFCC2CE2230E165C001688ED = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = DFCC2CC0230E165B001688ED;
+					};
+				};
+			};
+			buildConfigurationList = DFCC2CBC230E165B001688ED /* Build configuration list for PBXProject "HFProjectPlayground" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DFCC2CB8230E165B001688ED;
+			productRefGroup = DFCC2CC2230E165B001688ED /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DFCC2CC0230E165B001688ED /* HFProjectPlayground */,
+				DFCC2CD7230E165C001688ED /* HFProjectPlaygroundTests */,
+				DFCC2CE2230E165C001688ED /* HFProjectPlaygroundUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DFCC2CBF230E165B001688ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFCC2CD2230E165C001688ED /* LaunchScreen.storyboard in Resources */,
+				DFCC2CCF230E165C001688ED /* Assets.xcassets in Resources */,
+				DFCC2CCA230E165B001688ED /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFCC2CD6230E165C001688ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFCC2CE1230E165C001688ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6076E56082546EB1965E02C6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HFProjectPlaygroundUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		75E278A16D68F99FD6F4D274 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HFProjectPlayground-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C0404AE51E51F4EB03230298 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HFProjectPlayground/Pods-HFProjectPlayground-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HFProjectPlayground/Pods-HFProjectPlayground-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HFProjectPlayground/Pods-HFProjectPlayground-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F6A15F4A592D38F1674CCD68 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HFProjectPlaygroundTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DFCC2CBD230E165B001688ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFCC2CCD230E165B001688ED /* HFProjectPlayground.xcdatamodeld in Sources */,
+				DFCC2CC7230E165B001688ED /* ViewController.swift in Sources */,
+				DFCC2CC5230E165B001688ED /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFCC2CD4230E165C001688ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFCC2CDD230E165C001688ED /* HFProjectPlaygroundTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFCC2CDF230E165C001688ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFCC2CE8230E165C001688ED /* HFProjectPlaygroundUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DFCC2CDA230E165C001688ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DFCC2CC0230E165B001688ED /* HFProjectPlayground */;
+			targetProxy = DFCC2CD9230E165C001688ED /* PBXContainerItemProxy */;
+		};
+		DFCC2CE5230E165C001688ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DFCC2CC0230E165B001688ED /* HFProjectPlayground */;
+			targetProxy = DFCC2CE4230E165C001688ED /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DFCC2CC8230E165B001688ED /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DFCC2CC9230E165B001688ED /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DFCC2CD0230E165C001688ED /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DFCC2CD1230E165C001688ED /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DFCC2CEA230E165C001688ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DFCC2CEB230E165C001688ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DFCC2CED230E165C001688ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4FB900212B482967F13E441B /* Pods-HFProjectPlayground.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5BDUPFPQ4R;
+				INFOPLIST_FILE = HFProjectPlayground/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sfp.HFProjectPlayground;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DFCC2CEE230E165C001688ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EECE438A6A8D9E57941BB9A6 /* Pods-HFProjectPlayground.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5BDUPFPQ4R;
+				INFOPLIST_FILE = HFProjectPlayground/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sfp.HFProjectPlayground;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DFCC2CF0230E165C001688ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 38E10521B621580908AD2246 /* Pods-HFProjectPlaygroundTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5BDUPFPQ4R;
+				INFOPLIST_FILE = HFProjectPlaygroundTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sfp.HFProjectPlaygroundTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HFProjectPlayground.app/HFProjectPlayground";
+			};
+			name = Debug;
+		};
+		DFCC2CF1230E165C001688ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92D8B20185C23F089F93B1EA /* Pods-HFProjectPlaygroundTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5BDUPFPQ4R;
+				INFOPLIST_FILE = HFProjectPlaygroundTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sfp.HFProjectPlaygroundTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HFProjectPlayground.app/HFProjectPlayground";
+			};
+			name = Release;
+		};
+		DFCC2CF3230E165C001688ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B608663F879CC6E4AF38BDF /* Pods-HFProjectPlaygroundUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5BDUPFPQ4R;
+				INFOPLIST_FILE = HFProjectPlaygroundUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sfp.HFProjectPlaygroundUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HFProjectPlayground;
+			};
+			name = Debug;
+		};
+		DFCC2CF4230E165C001688ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8690B60D363A512DF8EC1F0B /* Pods-HFProjectPlaygroundUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5BDUPFPQ4R;
+				INFOPLIST_FILE = HFProjectPlaygroundUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sfp.HFProjectPlaygroundUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HFProjectPlayground;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DFCC2CBC230E165B001688ED /* Build configuration list for PBXProject "HFProjectPlayground" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFCC2CEA230E165C001688ED /* Debug */,
+				DFCC2CEB230E165C001688ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DFCC2CEC230E165C001688ED /* Build configuration list for PBXNativeTarget "HFProjectPlayground" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFCC2CED230E165C001688ED /* Debug */,
+				DFCC2CEE230E165C001688ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DFCC2CEF230E165C001688ED /* Build configuration list for PBXNativeTarget "HFProjectPlaygroundTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFCC2CF0230E165C001688ED /* Debug */,
+				DFCC2CF1230E165C001688ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DFCC2CF2230E165C001688ED /* Build configuration list for PBXNativeTarget "HFProjectPlaygroundUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFCC2CF3230E165C001688ED /* Debug */,
+				DFCC2CF4230E165C001688ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		DFCC2CCB230E165B001688ED /* HFProjectPlayground.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DFCC2CCC230E165B001688ED /* HFProjectPlayground.xcdatamodel */,
+			);
+			currentVersion = DFCC2CCC230E165B001688ED /* HFProjectPlayground.xcdatamodel */;
+			path = HFProjectPlayground.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = DFCC2CB9230E165B001688ED /* Project object */;
+}
