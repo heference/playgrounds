@@ -15,16 +15,28 @@ class MyViewController : UIViewController {
         self.view = view
         
 
-        let label = UILabel()
-        label.frame = CGRect(x: 150, y: 200, width: 200, height: 20)
-        label.text = "Hello World!"
-        label.textColor = .black
-        view.addSubview(label)
+        let textField = UITextField()
+        textField.frame = CGRect(x: 150, y: 200, width: 200, height: 20)
+        textField.text = "Hello World!"
+        textField.textColor = .black
+        view.addSubview(textField)
         
         let button = UIButton(frame: CGRect(x: 150, y: 250, width: 200, height: 20))
         button.setTitle("Button", for: .normal)
         button.setTitleColor(UIColor.black, for: .normal)
         view.addSubview(button)
+        
+        
+        textField.rx.text.asObservable()
+            .map {
+                print("\($0)")
+            }
+            .subscribe(onNext: {
+                
+            }, onCompleted: {
+                
+            })
+            .disposed(by: disposeBag)
         
         button.rx.tap
             .subscribe(onNext: {
@@ -33,6 +45,7 @@ class MyViewController : UIViewController {
                 print("onCompleted")
             })
             .disposed(by: disposeBag)
+        
         
         
     }
