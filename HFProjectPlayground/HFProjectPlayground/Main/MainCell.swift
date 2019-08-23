@@ -22,10 +22,10 @@ class MainCell: UITableViewCell {
         self.backgroundColor = UIColor.white
         
         self.addSubview(label)
-        label.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
-        label.leadingAnchor.constraint(equalTo: self.leadingAnchor).isActive = true
-        label.trailingAnchor.constraint(equalTo: self.trailingAnchor).isActive = true
-        label.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
+        label.topAnchor.constraint(equalTo: self.topAnchor, constant: 15).isActive = true
+        label.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 30).isActive = true
+        label.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -30).isActive = true
+        label.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -15).isActive = true
     }
     
     required init?(coder aDecoder: NSCoder) {

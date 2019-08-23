@@ -12,6 +12,7 @@ class MainView: UIView {
         let view = UITableView()
         view.translatesAutoresizingMaskIntoConstraints = false
         view.backgroundColor = UIColor.white
+        view.register(MainCell.self, forCellReuseIdentifier: "MainCell")
         return view
     }()
     

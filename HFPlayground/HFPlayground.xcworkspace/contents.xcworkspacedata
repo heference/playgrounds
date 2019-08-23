@@ -22,6 +22,9 @@
          <FileRef
             location = "group:/Users/heference/dev/ios/playgrounds/Mini-Max Sum.playground">
          </FileRef>
+         <FileRef
+            location = "group:Birthday Cake Candies.playground">
+         </FileRef>
       </Group>
       <FileRef
          location = "group:README.md">
