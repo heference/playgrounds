@@ -10,13 +10,10 @@
 		081447C34D5AAFA8C10281A3 /* Pods_HFProjectPlayground.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD5DC52FC974584620B125D5 /* Pods_HFProjectPlayground.framework */; };
 		6CF8EC25DEE71BCA82E6FA88 /* Pods_HFProjectPlaygroundUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9E53D076EE85A4866AC98DC /* Pods_HFProjectPlaygroundUITests.framework */; };
 		C33B25071F7B753ACAB8746F /* Pods_HFProjectPlaygroundTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB45D456A46BE36B76CBAF77 /* Pods_HFProjectPlaygroundTests.framework */; };
+		C8922C382311599000325CBC /* AppStoreSearchMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8922C372311599000325CBC /* AppStoreSearchMainView.swift */; };
 		DF2A84DB230E84EE00C9393B /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2A84DA230E84EE00C9393B /* MainView.swift */; };
 		DF2A84DD230E858F00C9393B /* MainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2A84DC230E858F00C9393B /* MainCell.swift */; };
 		DF2A84E0230F725400C9393B /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2A84DF230F725400C9393B /* MainViewModel.swift */; };
-		DF2A84E6230FA14000C9393B /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2A84E2230FA14000C9393B /* TableView.swift */; };
-		DF2A84E7230FA14000C9393B /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2A84E3230FA14000C9393B /* TableViewController.swift */; };
-		DF2A84E8230FA14000C9393B /* TableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2A84E4230FA14000C9393B /* TableViewModel.swift */; };
-		DF2A84E9230FA14000C9393B /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2A84E5230FA14000C9393B /* TableViewCell.swift */; };
 		DF2A84EC230FA5C500C9393B /* AppStoreMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2A84EB230FA5C500C9393B /* AppStoreMainViewController.swift */; };
 		DF2A84EE230FA75C00C9393B /* AppStoreTodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2A84ED230FA75C00C9393B /* AppStoreTodayViewController.swift */; };
 		DF2A84F0230FA79600C9393B /* AppStoreGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2A84EF230FA79600C9393B /* AppStoreGameViewController.swift */; };
@@ -55,14 +52,11 @@
 		4FB900212B482967F13E441B /* Pods-HFProjectPlayground.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HFProjectPlayground.debug.xcconfig"; path = "Target Support Files/Pods-HFProjectPlayground/Pods-HFProjectPlayground.debug.xcconfig"; sourceTree = "<group>"; };
 		8690B60D363A512DF8EC1F0B /* Pods-HFProjectPlaygroundUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HFProjectPlaygroundUITests.release.xcconfig"; path = "Target Support Files/Pods-HFProjectPlaygroundUITests/Pods-HFProjectPlaygroundUITests.release.xcconfig"; sourceTree = "<group>"; };
 		92D8B20185C23F089F93B1EA /* Pods-HFProjectPlaygroundTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HFProjectPlaygroundTests.release.xcconfig"; path = "Target Support Files/Pods-HFProjectPlaygroundTests/Pods-HFProjectPlaygroundTests.release.xcconfig"; sourceTree = "<group>"; };
+		C8922C372311599000325CBC /* AppStoreSearchMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoreSearchMainView.swift; sourceTree = "<group>"; };
 		CD5DC52FC974584620B125D5 /* Pods_HFProjectPlayground.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HFProjectPlayground.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF2A84DA230E84EE00C9393B /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		DF2A84DC230E858F00C9393B /* MainCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCell.swift; sourceTree = "<group>"; };
 		DF2A84DF230F725400C9393B /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
-		DF2A84E2230FA14000C9393B /* TableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableView.swift; sourceTree = "<group>"; };
-		DF2A84E3230FA14000C9393B /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
-		DF2A84E4230FA14000C9393B /* TableViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewModel.swift; sourceTree = "<group>"; };
-		DF2A84E5230FA14000C9393B /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		DF2A84EB230FA5C500C9393B /* AppStoreMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoreMainViewController.swift; sourceTree = "<group>"; };
 		DF2A84ED230FA75C00C9393B /* AppStoreTodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoreTodayViewController.swift; sourceTree = "<group>"; };
 		DF2A84EF230FA79600C9393B /* AppStoreGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoreGameViewController.swift; sourceTree = "<group>"; };
@@ -149,17 +143,6 @@
 			path = Main;
 			sourceTree = "<group>";
 		};
-		DF2A84E1230FA0C800C9393B /* UITableView */ = {
-			isa = PBXGroup;
-			children = (
-				DF2A84E5230FA14000C9393B /* TableViewCell.swift */,
-				DF2A84E2230FA14000C9393B /* TableView.swift */,
-				DF2A84E3230FA14000C9393B /* TableViewController.swift */,
-				DF2A84E4230FA14000C9393B /* TableViewModel.swift */,
-			);
-			path = UITableView;
-			sourceTree = "<group>";
-		};
 		DF2A84EA230FA52900C9393B /* App Store Sample */ = {
 			isa = PBXGroup;
 			children = (
@@ -169,6 +152,7 @@
 				DF2A84F1230FA7B000C9393B /* AppStoreAppsViewController.swift */,
 				DF2A84F3230FA7CF00C9393B /* AppStoreArcadeViewController.swift */,
 				DF2A84F5230FA7E900C9393B /* AppStoreSearchViewController.swift */,
+				C8922C372311599000325CBC /* AppStoreSearchMainView.swift */,
 			);
 			path = "App Store Sample";
 			sourceTree = "<group>";
@@ -199,7 +183,6 @@
 			isa = PBXGroup;
 			children = (
 				DF2A84DE230E864300C9393B /* Main */,
-				DF2A84E1230FA0C800C9393B /* UITableView */,
 				DF2A84EA230FA52900C9393B /* App Store Sample */,
 				DFCC2CC4230E165B001688ED /* AppDelegate.swift */,
 				DFCC2CCE230E165C001688ED /* Assets.xcassets */,
@@ -448,22 +431,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8922C382311599000325CBC /* AppStoreSearchMainView.swift in Sources */,
 				DF2A84F6230FA7E900C9393B /* AppStoreSearchViewController.swift in Sources */,
 				DFCC2CCD230E165B001688ED /* HFProjectPlayground.xcdatamodeld in Sources */,
-				DF2A84E6230FA14000C9393B /* TableView.swift in Sources */,
 				DF2A84F4230FA7CF00C9393B /* AppStoreArcadeViewController.swift in Sources */,
 				DF2A84EC230FA5C500C9393B /* AppStoreMainViewController.swift in Sources */,
 				DF2A84DB230E84EE00C9393B /* MainView.swift in Sources */,
 				DFCC2CC7230E165B001688ED /* MainViewController.swift in Sources */,
-				DF2A84E9230FA14000C9393B /* TableViewCell.swift in Sources */,
 				DFCC2CC5230E165B001688ED /* AppDelegate.swift in Sources */,
 				DF2A84F0230FA79600C9393B /* AppStoreGameViewController.swift in Sources */,
 				DF2A84DD230E858F00C9393B /* MainCell.swift in Sources */,
 				DF2A84E0230F725400C9393B /* MainViewModel.swift in Sources */,
-				DF2A84E7230FA14000C9393B /* TableViewController.swift in Sources */,
 				DF2A84EE230FA75C00C9393B /* AppStoreTodayViewController.swift in Sources */,
 				DF2A84F2230FA7B000C9393B /* AppStoreAppsViewController.swift in Sources */,
-				DF2A84E8230FA14000C9393B /* TableViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

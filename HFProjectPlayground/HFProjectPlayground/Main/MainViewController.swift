@@ -36,7 +36,7 @@ class MainViewController: UIViewController {
         mainView.tableView.rx.itemSelected
             .subscribe(onNext: { [weak self] index in
                 if index.row == 0 {
-                    self?.navigationController?.pushViewController(TableViewController(), animated: true)
+                    print(index)
                 } else if index.row == 1 {
                     print(index)
                 } else if index.row == 2 {
