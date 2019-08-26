@@ -25,6 +25,9 @@
          <FileRef
             location = "group:Birthday Cake Candies.playground">
          </FileRef>
+         <FileRef
+            location = "group:Time Conversion.playground">
+         </FileRef>
       </Group>
       <FileRef
          location = "group:README.md">
