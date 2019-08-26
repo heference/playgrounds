@@ -20,6 +20,7 @@
 		DF2A84F2230FA7B000C9393B /* AppStoreAppsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2A84F1230FA7B000C9393B /* AppStoreAppsViewController.swift */; };
 		DF2A84F4230FA7CF00C9393B /* AppStoreArcadeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2A84F3230FA7CF00C9393B /* AppStoreArcadeViewController.swift */; };
 		DF2A84F6230FA7E900C9393B /* AppStoreSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2A84F5230FA7E900C9393B /* AppStoreSearchViewController.swift */; };
+		DF2A84F923135FFF00C9393B /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2A84F823135FFF00C9393B /* APIService.swift */; };
 		DFCC2CC5230E165B001688ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFCC2CC4230E165B001688ED /* AppDelegate.swift */; };
 		DFCC2CC7230E165B001688ED /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFCC2CC6230E165B001688ED /* MainViewController.swift */; };
 		DFCC2CCD230E165B001688ED /* HFProjectPlayground.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DFCC2CCB230E165B001688ED /* HFProjectPlayground.xcdatamodeld */; };
@@ -63,6 +64,7 @@
 		DF2A84F1230FA7B000C9393B /* AppStoreAppsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoreAppsViewController.swift; sourceTree = "<group>"; };
 		DF2A84F3230FA7CF00C9393B /* AppStoreArcadeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoreArcadeViewController.swift; sourceTree = "<group>"; };
 		DF2A84F5230FA7E900C9393B /* AppStoreSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoreSearchViewController.swift; sourceTree = "<group>"; };
+		DF2A84F823135FFF00C9393B /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		DFCC2CC1230E165B001688ED /* HFProjectPlayground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HFProjectPlayground.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFCC2CC4230E165B001688ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DFCC2CC6230E165B001688ED /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -157,6 +159,14 @@
 			path = "App Store Sample";
 			sourceTree = "<group>";
 		};
+		DF2A84F723135FD200C9393B /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				DF2A84F823135FFF00C9393B /* APIService.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		DFCC2CB8230E165B001688ED = {
 			isa = PBXGroup;
 			children = (
@@ -184,6 +194,7 @@
 			children = (
 				DF2A84DE230E864300C9393B /* Main */,
 				DF2A84EA230FA52900C9393B /* App Store Sample */,
+				DF2A84F723135FD200C9393B /* Utils */,
 				DFCC2CC4230E165B001688ED /* AppDelegate.swift */,
 				DFCC2CCE230E165C001688ED /* Assets.xcassets */,
 				DFCC2CD0230E165C001688ED /* LaunchScreen.storyboard */,
@@ -439,6 +450,7 @@
 				DF2A84DB230E84EE00C9393B /* MainView.swift in Sources */,
 				DFCC2CC7230E165B001688ED /* MainViewController.swift in Sources */,
 				DFCC2CC5230E165B001688ED /* AppDelegate.swift in Sources */,
+				DF2A84F923135FFF00C9393B /* APIService.swift in Sources */,
 				DF2A84F0230FA79600C9393B /* AppStoreGameViewController.swift in Sources */,
 				DF2A84DD230E858F00C9393B /* MainCell.swift in Sources */,
 				DF2A84E0230F725400C9393B /* MainViewModel.swift in Sources */,
