@@ -21,6 +21,8 @@
 		DF2A84F4230FA7CF00C9393B /* AppStoreArcadeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2A84F3230FA7CF00C9393B /* AppStoreArcadeViewController.swift */; };
 		DF2A84F6230FA7E900C9393B /* AppStoreSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2A84F5230FA7E900C9393B /* AppStoreSearchViewController.swift */; };
 		DF2A84F923135FFF00C9393B /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2A84F823135FFF00C9393B /* APIService.swift */; };
+		DF2A84FB2314D25500C9393B /* AppStoreSearchListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2A84FA2314D25500C9393B /* AppStoreSearchListCell.swift */; };
+		DF2A84FE2314D35E00C9393B /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2A84FD2314D35E00C9393B /* Extension.swift */; };
 		DFCC2CC5230E165B001688ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFCC2CC4230E165B001688ED /* AppDelegate.swift */; };
 		DFCC2CC7230E165B001688ED /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFCC2CC6230E165B001688ED /* MainViewController.swift */; };
 		DFCC2CCD230E165B001688ED /* HFProjectPlayground.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DFCC2CCB230E165B001688ED /* HFProjectPlayground.xcdatamodeld */; };
@@ -65,6 +67,8 @@
 		DF2A84F3230FA7CF00C9393B /* AppStoreArcadeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoreArcadeViewController.swift; sourceTree = "<group>"; };
 		DF2A84F5230FA7E900C9393B /* AppStoreSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoreSearchViewController.swift; sourceTree = "<group>"; };
 		DF2A84F823135FFF00C9393B /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		DF2A84FA2314D25500C9393B /* AppStoreSearchListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoreSearchListCell.swift; sourceTree = "<group>"; };
+		DF2A84FD2314D35E00C9393B /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		DFCC2CC1230E165B001688ED /* HFProjectPlayground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HFProjectPlayground.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFCC2CC4230E165B001688ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DFCC2CC6230E165B001688ED /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -155,6 +159,7 @@
 				DF2A84F3230FA7CF00C9393B /* AppStoreArcadeViewController.swift */,
 				DF2A84F5230FA7E900C9393B /* AppStoreSearchViewController.swift */,
 				C8922C372311599000325CBC /* AppStoreSearchMainView.swift */,
+				DF2A84FA2314D25500C9393B /* AppStoreSearchListCell.swift */,
 			);
 			path = "App Store Sample";
 			sourceTree = "<group>";
@@ -165,6 +170,18 @@
 				DF2A84F823135FFF00C9393B /* APIService.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		DF2A84FC2314D33400C9393B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DFCC2CC4230E165B001688ED /* AppDelegate.swift */,
+				DF2A84FD2314D35E00C9393B /* Extension.swift */,
+				DFCC2CCE230E165C001688ED /* Assets.xcassets */,
+				DFCC2CD0230E165C001688ED /* LaunchScreen.storyboard */,
+				DFCC2CCB230E165B001688ED /* HFProjectPlayground.xcdatamodeld */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		DFCC2CB8230E165B001688ED = {
@@ -195,11 +212,8 @@
 				DF2A84DE230E864300C9393B /* Main */,
 				DF2A84EA230FA52900C9393B /* App Store Sample */,
 				DF2A84F723135FD200C9393B /* Utils */,
-				DFCC2CC4230E165B001688ED /* AppDelegate.swift */,
-				DFCC2CCE230E165C001688ED /* Assets.xcassets */,
-				DFCC2CD0230E165C001688ED /* LaunchScreen.storyboard */,
+				DF2A84FC2314D33400C9393B /* Supporting Files */,
 				DFCC2CD3230E165C001688ED /* Info.plist */,
-				DFCC2CCB230E165B001688ED /* HFProjectPlayground.xcdatamodeld */,
 			);
 			path = HFProjectPlayground;
 			sourceTree = "<group>";
@@ -449,6 +463,8 @@
 				DF2A84EC230FA5C500C9393B /* AppStoreMainViewController.swift in Sources */,
 				DF2A84DB230E84EE00C9393B /* MainView.swift in Sources */,
 				DFCC2CC7230E165B001688ED /* MainViewController.swift in Sources */,
+				DF2A84FE2314D35E00C9393B /* Extension.swift in Sources */,
+				DF2A84FB2314D25500C9393B /* AppStoreSearchListCell.swift in Sources */,
 				DFCC2CC5230E165B001688ED /* AppDelegate.swift in Sources */,
 				DF2A84F923135FFF00C9393B /* APIService.swift in Sources */,
 				DF2A84F0230FA79600C9393B /* AppStoreGameViewController.swift in Sources */,

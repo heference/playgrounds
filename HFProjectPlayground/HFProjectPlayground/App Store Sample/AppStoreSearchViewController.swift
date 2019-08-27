@@ -23,10 +23,16 @@ class AppStoreSearchViewController: UIViewController {
     let navigationBarTitle = "검색"
     let isLargeTitle = true
     
-    var searchKeyword: Observable<String>?
-    var searchResult: Observable<[String]> = Observable.just(["facebook", "instagram"])
+    
+    var search = [String]()
+    
+    var mode = Observable.just("RecentlyKeyword")
+    var keywordRelay = BehaviorRelay(value: "")
+    var searchRelay = BehaviorRelay(value: [String]())
+    var searchResultRelay = BehaviorRelay(value: [ITunesSearchAPI]())
     
     func bindUI() {
+        
         Observable.just(navigationBarTitle)
             .subscribe(onNext: { title in
                 self.title = title
@@ -37,70 +43,81 @@ class AppStoreSearchViewController: UIViewController {
             .subscribe(onNext: { isLargeTitle in
                 self.navigationController?.navigationBar.prefersLargeTitles = isLargeTitle
                 let searchController = UISearchController(searchResultsController: nil)
+                searchController.dimsBackgroundDuringPresentation = false
                 self.navigationItem.searchController = searchController
                 self.navigationItem.hidesSearchBarWhenScrolling = false
             })
             .disposed(by: disposeBag)
         
-        searchView.tableView.rx.itemSelected
-            .subscribe(onNext: { index in
-                
-            }).disposed(by: disposeBag)
-        
-        
-        searchKeyword = self.navigationItem.searchController?.searchBar.rx.text.orEmpty
-            .throttle(0.5, scheduler: MainScheduler.instance)
-            .distinctUntilChanged()
-            .observeOn(MainScheduler.instance)
-        
         self.navigationItem.searchController?.searchBar.rx.searchButtonClicked
             .subscribe(onNext: { _ in
                 print("clicked")
-//                searchKeyword = self.navigationItem.searchController?.searchBar.rx.text.orEmpty
-            })
-            .disposed(by: disposeBag)
-        
-        
-        searchKeyword?.asObservable()
-            .subscribe(onNext: { keyword in
-                print(keyword)
-            }, onCompleted: {
-                print("onCompleted")
-            })
-            .disposed(by: disposeBag)
-        
-        
-        
-        searchResult
-            .bind(to: searchView.tableView.rx.items) { (tableView, index, category) -> UITableViewCell in
-                let cell = tableView.dequeueReusableCell(withIdentifier: "MainCell") as? MainCell
-                cell?.label.text = category
-                return cell ?? UITableViewCell()
-            }.disposed(by: disposeBag)
-
-        
-        
-        
-        
-        
-        let keyword = "etners"
-        let request = URLRequest(url: URL(string: "https://itunes.apple.com/search?term=\(keyword)&country=kr&entity=software")!)
-        URLSession.shared.rx.data(request: request)
-            .subscribe(onNext: { data in
-                do {
-                    let json = try JSONDecoder().decode(APIResult.self, from: data)
-                    print(json)
-                } catch let error {
-                    print(error)
+                if let keyword = self.navigationItem.searchController?.searchBar.text,
+                    keyword.isEmpty == false {
+                    self.search.append(keyword)
+                    self.searchRelay.accept(self.search)
+                    self.keywordRelay.accept(keyword)
                 }
-            }, onError: { error in
-                print(error)
-            }, onCompleted: {
-                print("onCompleted")
             })
             .disposed(by: disposeBag)
         
         
+//        searchRelay
+//            .bind(to: searchView.tableView.rx.items) { (tableView, index, keyword) -> UITableViewCell in
+//                let cell = tableView.dequeueReusableCell(withIdentifier: "MainCell") as? MainCell
+//                cell?.label.text = keyword
+//                return cell ?? UITableViewCell()
+//            }.disposed(by: disposeBag)
+        
+        searchView.tableView.rx.itemSelected
+            .subscribe(onNext: { index in
+//                print(self.searchRelay.value[index.row])
+            }).disposed(by: disposeBag)
+        
+        keywordRelay.subscribe(onNext: { keyword in
+            self.searchAPI(text: keyword)
+        }).disposed(by: disposeBag)
+        
+//        searchResultRelay
+//            .bind(to: searchView.tableView.rx.items) { (tableView, index, search) -> UITableViewCell in
+//                let cell = tableView.dequeueReusableCell(withIdentifier: "AppStoreSearchListCell") as? AppStoreSearchListCell
+//                cell?.appTitleLabel.text = search.trackCensoredName
+//                return cell ?? UITableViewCell()
+//            }.disposed(by: disposeBag)
+        
+        
+        
+        Observable.combineLatest(mode, keywordRelay, searchRelay, searchResultRelay)
+            .subscribe(onNext: { mode, keyword, keywordList, result in
+                
+                print(keyword)
+                print(keywordList)
+            })
+            .disposed(by: disposeBag)
+    }
+    
+    
+    func searchAPI(text: String) {
+        let request = URLRequest(url: URL(string: "https://itunes.apple.com/search?term=\(text)&country=kr&entity=software")!)
+        URLSession.shared.rx.data(request: request)
+            .map {
+                self.parseData(data: $0)
+            }
+            .subscribe(onNext: { apiResult in
+                self.searchResultRelay.accept(apiResult.results ?? [])
+            })
+            .disposed(by: self.disposeBag)
+    }
+    
+    func parseData(data: Data) -> APIResult {
+        let json = try? JSONDecoder().decode(APIResult.self, from: data)
+        return json ?? APIResult(resultCount: 0, results: [])
     }
 
+}
+
+enum ViewType: String {
+    case RecentlyKeyword = "RecentlyKeyword"
+    case SearchKeyword = "SearchKeyword"
+    case SearchApp = "SearchApp"
 }
