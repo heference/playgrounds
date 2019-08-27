@@ -7,27 +7,38 @@
       <Group
          location = "container:"
          name = "HackerRank">
-         <FileRef
-            location = "group:Staircase.playground">
-         </FileRef>
-         <FileRef
-            location = "group:A Very Big Sum.playground">
-         </FileRef>
-         <FileRef
-            location = "group:Diagonal Difference.playground">
-         </FileRef>
-         <FileRef
-            location = "group:Plus Minus.playground">
-         </FileRef>
-         <FileRef
-            location = "group:/Users/heference/dev/ios/playgrounds/Mini-Max Sum.playground">
-         </FileRef>
-         <FileRef
-            location = "group:Birthday Cake Candies.playground">
-         </FileRef>
-         <FileRef
-            location = "group:Time Conversion.playground">
-         </FileRef>
+         <Group
+            location = "container:"
+            name = "Implementation">
+            <FileRef
+               location = "group:Halloween Sale.playground">
+            </FileRef>
+         </Group>
+         <Group
+            location = "container:"
+            name = "Warm Up">
+            <FileRef
+               location = "group:Staircase.playground">
+            </FileRef>
+            <FileRef
+               location = "group:A Very Big Sum.playground">
+            </FileRef>
+            <FileRef
+               location = "group:Diagonal Difference.playground">
+            </FileRef>
+            <FileRef
+               location = "group:Plus Minus.playground">
+            </FileRef>
+            <FileRef
+               location = "group:/Users/heference/dev/ios/playgrounds/Mini-Max Sum.playground">
+            </FileRef>
+            <FileRef
+               location = "group:Birthday Cake Candies.playground">
+            </FileRef>
+            <FileRef
+               location = "group:Time Conversion.playground">
+            </FileRef>
+         </Group>
       </Group>
       <FileRef
          location = "group:README.md">
