@@ -9,6 +9,7 @@
 import UIKit
 import RxSwift
 import RxCocoa
+import RxDataSources
 
 class AppStoreSearchViewController: UIViewController {
     private let disposeBag = DisposeBag()
@@ -26,7 +27,7 @@ class AppStoreSearchViewController: UIViewController {
     
     var search = [String]()
     
-    var mode = Observable.just("RecentlyKeyword")
+//    var mode = Observable.just("RecentlyKeyword")
     var keywordRelay = BehaviorRelay(value: "")
     var searchRelay = BehaviorRelay(value: [String]())
     var searchResultRelay = BehaviorRelay(value: [ITunesSearchAPI]())
@@ -78,12 +79,12 @@ class AppStoreSearchViewController: UIViewController {
             self.searchAPI(text: keyword)
         }).disposed(by: disposeBag)
         
-//        searchResultRelay
-//            .bind(to: searchView.tableView.rx.items) { (tableView, index, search) -> UITableViewCell in
-//                let cell = tableView.dequeueReusableCell(withIdentifier: "AppStoreSearchListCell") as? AppStoreSearchListCell
-//                cell?.appTitleLabel.text = search.trackCensoredName
-//                return cell ?? UITableViewCell()
-//            }.disposed(by: disposeBag)
+        searchResultRelay
+            .bind(to: searchView.tableView.rx.items) { (tableView, index, search) -> UITableViewCell in
+                let cell = tableView.dequeueReusableCell(withIdentifier: "AppStoreSearchListCell") as? AppStoreSearchListCell
+                cell?.appTitleLabel.text = search.trackCensoredName
+                return cell ?? UITableViewCell()
+            }.disposed(by: disposeBag)
         
         
         
@@ -94,6 +95,33 @@ class AppStoreSearchViewController: UIViewController {
                 print(keywordList)
             })
             .disposed(by: disposeBag)
+        
+        
+        let dataSource = RxTableViewSectionedReloadDataSource<SectionedViewItem>(configureCell: { _, tableView, indexPath, item in
+            
+            if let viewItem = item as? BannerViewItem {
+                guard let cell = tableView.dequeueReusableCell(withIdentifier: BannerCell.Key, for: indexPath) as? BannerCell else { fatalError() }
+                cell.configureBindings(itemSource: viewItem)
+                return cell
+            } else if let viewItem = item as? CarSpecificationViewItem {
+                guard let cell = tableView.dequeueReusableCell(withIdentifier: CarSpecificationCell.Key, for: indexPath) as? CarSpecificationCell else { fatalError() }
+                cell.configureBindings(itemSource: viewItem)
+                return cell
+            } else if let viewItem = item as? CarBenefitViewItem {
+                guard let cell = tableView.dequeueReusableCell(withIdentifier: CarBenefitCell.Key, for: indexPath) as? CarBenefitCell else { fatalError() }
+                cell.configureBindings(itemSource: viewItem)
+                return cell
+            } else if let viewItem = item as? FavoriteHeaderViewItem {
+                guard let cell = tableView.dequeueReusableCell(withIdentifier: CarFavoritesCell.Key, for: indexPath) as? CarFavoritesCell else { fatalError() }
+                cell.configureBindings(itemSource: viewItem)
+                return cell
+            } else {
+                return UITableViewCell()
+            }
+        })
+        
+        
+        
     }
     
     
