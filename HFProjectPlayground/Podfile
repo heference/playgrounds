@@ -5,9 +5,15 @@ target 'HFProjectPlayground' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
   
+  # RxSwift
   pod 'RxSwift'
   pod 'RxCocoa'
-
+  
+  # Google MLKit
+  pod 'Firebase/Analytics'
+  pod 'Firebase/MLVision'
+  pod 'Firebase/MLVisionObjectDetection'
+  
   # Pods for HFProjectPlayground
 
   target 'HFProjectPlaygroundTests' do
