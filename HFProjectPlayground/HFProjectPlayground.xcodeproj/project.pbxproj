@@ -16,6 +16,9 @@
 		C8DBDE54231D208900CAD0ED /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8DBDE53231D208900CAD0ED /* Extension.swift */; };
 		C8DBDE56231D222300CAD0ED /* SnapGuideResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8DBDE55231D222300CAD0ED /* SnapGuideResultViewController.swift */; };
 		C8DBDE58231D225300CAD0ED /* SnapGuideResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8DBDE57231D225300CAD0ED /* SnapGuideResultView.swift */; };
+		C8DBDE8623266C4600CAD0ED /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C8DBDE8523266C4600CAD0ED /* GoogleService-Info.plist */; };
+		C8DBDE892326780400CAD0ED /* UIUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8DBDE872326780400CAD0ED /* UIUtilities.swift */; };
+		C8DBDE8A2326780400CAD0ED /* MLKitExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8DBDE882326780400CAD0ED /* MLKitExtensions.swift */; };
 		DF2A84DB230E84EE00C9393B /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2A84DA230E84EE00C9393B /* MainView.swift */; };
 		DF2A84DD230E858F00C9393B /* MainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2A84DC230E858F00C9393B /* MainCell.swift */; };
 		DF2A84E0230F725400C9393B /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2A84DF230F725400C9393B /* MainViewModel.swift */; };
@@ -63,6 +66,9 @@
 		C8DBDE53231D208900CAD0ED /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		C8DBDE55231D222300CAD0ED /* SnapGuideResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapGuideResultViewController.swift; sourceTree = "<group>"; };
 		C8DBDE57231D225300CAD0ED /* SnapGuideResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapGuideResultView.swift; sourceTree = "<group>"; };
+		C8DBDE8523266C4600CAD0ED /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C8DBDE872326780400CAD0ED /* UIUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIUtilities.swift; sourceTree = "<group>"; };
+		C8DBDE882326780400CAD0ED /* MLKitExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MLKitExtensions.swift; sourceTree = "<group>"; };
 		CD5DC52FC974584620B125D5 /* Pods_HFProjectPlayground.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HFProjectPlayground.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF2A84DA230E84EE00C9393B /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		DF2A84DC230E858F00C9393B /* MainCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCell.swift; sourceTree = "<group>"; };
@@ -135,6 +141,8 @@
 		C8DBDE4D231D1A2000CAD0ED /* Snap Guide Adjustment */ = {
 			isa = PBXGroup;
 			children = (
+				C8DBDE882326780400CAD0ED /* MLKitExtensions.swift */,
+				C8DBDE872326780400CAD0ED /* UIUtilities.swift */,
 				C8DBDE4E231D1B3200CAD0ED /* SnapGuideCropViewController.swift */,
 				C8DBDE50231D1B7800CAD0ED /* SnapGuideCropView.swift */,
 				C8DBDE55231D222300CAD0ED /* SnapGuideResultViewController.swift */,
@@ -219,6 +227,7 @@
 				DFCC2CCE230E165C001688ED /* Assets.xcassets */,
 				DFCC2CD0230E165C001688ED /* LaunchScreen.storyboard */,
 				DFCC2CD3230E165C001688ED /* Info.plist */,
+				C8DBDE8523266C4600CAD0ED /* GoogleService-Info.plist */,
 				DFCC2CCB230E165B001688ED /* HFProjectPlayground.xcdatamodeld */,
 			);
 			path = HFProjectPlayground;
@@ -352,6 +361,7 @@
 			files = (
 				DFCC2CD2230E165C001688ED /* LaunchScreen.storyboard in Resources */,
 				DFCC2CCF230E165C001688ED /* Assets.xcassets in Resources */,
+				C8DBDE8623266C4600CAD0ED /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -475,8 +485,10 @@
 				C8DBDE58231D225300CAD0ED /* SnapGuideResultView.swift in Sources */,
 				DFCC2CC7230E165B001688ED /* MainViewController.swift in Sources */,
 				DFCC2CC5230E165B001688ED /* AppDelegate.swift in Sources */,
+				C8DBDE8A2326780400CAD0ED /* MLKitExtensions.swift in Sources */,
 				DF2A84F0230FA79600C9393B /* AppStoreGameViewController.swift in Sources */,
 				DF2A84DD230E858F00C9393B /* MainCell.swift in Sources */,
+				C8DBDE892326780400CAD0ED /* UIUtilities.swift in Sources */,
 				DF2A84E0230F725400C9393B /* MainViewModel.swift in Sources */,
 				DF2A84EE230FA75C00C9393B /* AppStoreTodayViewController.swift in Sources */,
 				DF2A84F2230FA7B000C9393B /* AppStoreAppsViewController.swift in Sources */,
