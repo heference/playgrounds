@@ -24,7 +24,13 @@ class MainViewController: UIViewController {
     }
     
     func bindUI() {
-        let rxCategories = ["UITableView RxSwift", "Form RxSwift", "UICollectionView RxSwift", "App Store Sample", "Snap Guide Adjustment"]
+        let rxCategories = ["UITableView RxSwift",
+                            "Form RxSwift",
+                            "UICollectionView RxSwift",
+                            "App Store Sample",
+                            "Snap Guide Adjustment",
+                            "Infinite Page View Controller"
+                            ]
         
         Observable.of(rxCategories)
             .bind(to: mainView.tableView.rx.items) { (tableView, index, category) -> UITableViewCell in
@@ -45,6 +51,8 @@ class MainViewController: UIViewController {
                     UIApplication.shared.keyWindow?.rootViewController = AppStoreMainViewController()
                 } else if index.row == 4 {
                     UIApplication.shared.keyWindow?.rootViewController = UINavigationController(rootViewController: SnapGuideCropViewController())
+                } else if index.row == 5 {
+                    UIApplication.shared.keyWindow?.rootViewController = InfinitePageViewController()
                 }
             }).disposed(by: disposeBag)
         

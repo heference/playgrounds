@@ -11,14 +11,6 @@
 		6CF8EC25DEE71BCA82E6FA88 /* Pods_HFProjectPlaygroundUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9E53D076EE85A4866AC98DC /* Pods_HFProjectPlaygroundUITests.framework */; };
 		C33B25071F7B753ACAB8746F /* Pods_HFProjectPlaygroundTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB45D456A46BE36B76CBAF77 /* Pods_HFProjectPlaygroundTests.framework */; };
 		C8922C382311599000325CBC /* AppStoreSearchMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8922C372311599000325CBC /* AppStoreSearchMainView.swift */; };
-		C8DBDE4F231D1B3200CAD0ED /* SnapGuideCropViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8DBDE4E231D1B3200CAD0ED /* SnapGuideCropViewController.swift */; };
-		C8DBDE51231D1B7800CAD0ED /* SnapGuideCropView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8DBDE50231D1B7800CAD0ED /* SnapGuideCropView.swift */; };
-		C8DBDE54231D208900CAD0ED /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8DBDE53231D208900CAD0ED /* Extension.swift */; };
-		C8DBDE56231D222300CAD0ED /* SnapGuideResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8DBDE55231D222300CAD0ED /* SnapGuideResultViewController.swift */; };
-		C8DBDE58231D225300CAD0ED /* SnapGuideResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8DBDE57231D225300CAD0ED /* SnapGuideResultView.swift */; };
-		C8DBDE8623266C4600CAD0ED /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C8DBDE8523266C4600CAD0ED /* GoogleService-Info.plist */; };
-		C8DBDE892326780400CAD0ED /* UIUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8DBDE872326780400CAD0ED /* UIUtilities.swift */; };
-		C8DBDE8A2326780400CAD0ED /* MLKitExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8DBDE882326780400CAD0ED /* MLKitExtensions.swift */; };
 		DF2A84DB230E84EE00C9393B /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2A84DA230E84EE00C9393B /* MainView.swift */; };
 		DF2A84DD230E858F00C9393B /* MainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2A84DC230E858F00C9393B /* MainCell.swift */; };
 		DF2A84E0230F725400C9393B /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2A84DF230F725400C9393B /* MainViewModel.swift */; };
@@ -28,6 +20,9 @@
 		DF2A84F2230FA7B000C9393B /* AppStoreAppsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2A84F1230FA7B000C9393B /* AppStoreAppsViewController.swift */; };
 		DF2A84F4230FA7CF00C9393B /* AppStoreArcadeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2A84F3230FA7CF00C9393B /* AppStoreArcadeViewController.swift */; };
 		DF2A84F6230FA7E900C9393B /* AppStoreSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2A84F5230FA7E900C9393B /* AppStoreSearchViewController.swift */; };
+		DF2A84F923135FFF00C9393B /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2A84F823135FFF00C9393B /* APIService.swift */; };
+		DF2A84FB2314D25500C9393B /* AppStoreSearchListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2A84FA2314D25500C9393B /* AppStoreSearchListCell.swift */; };
+		DF2A84FE2314D35E00C9393B /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2A84FD2314D35E00C9393B /* Extension.swift */; };
 		DFCC2CC5230E165B001688ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFCC2CC4230E165B001688ED /* AppDelegate.swift */; };
 		DFCC2CC7230E165B001688ED /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFCC2CC6230E165B001688ED /* MainViewController.swift */; };
 		DFCC2CCD230E165B001688ED /* HFProjectPlayground.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DFCC2CCB230E165B001688ED /* HFProjectPlayground.xcdatamodeld */; };
@@ -35,6 +30,15 @@
 		DFCC2CD2230E165C001688ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFCC2CD0230E165C001688ED /* LaunchScreen.storyboard */; };
 		DFCC2CDD230E165C001688ED /* HFProjectPlaygroundTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFCC2CDC230E165C001688ED /* HFProjectPlaygroundTests.swift */; };
 		DFCC2CE8230E165C001688ED /* HFProjectPlaygroundUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFCC2CE7230E165C001688ED /* HFProjectPlaygroundUITests.swift */; };
+		DFD5768A23700A5300024FC9 /* InfinitePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD5768923700A5300024FC9 /* InfinitePageViewController.swift */; };
+		DFD5768C23700A7E00024FC9 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD5768B23700A7E00024FC9 /* FirstViewController.swift */; };
+		DFD5768E23700A9100024FC9 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD5768D23700A9100024FC9 /* SecondViewController.swift */; };
+		DFD5769023700BB700024FC9 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD5768F23700BB700024FC9 /* ThirdViewController.swift */; };
+		DFD5769223700BCD00024FC9 /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD5769123700BCD00024FC9 /* FourthViewController.swift */; };
+		DFD5769B237011E600024FC9 /* SnapGuideResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD57697237011E600024FC9 /* SnapGuideResultViewController.swift */; };
+		DFD5769C237011E600024FC9 /* SnapGuideCropView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD57698237011E600024FC9 /* SnapGuideCropView.swift */; };
+		DFD5769D237011E600024FC9 /* SnapGuideCropViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD57699237011E600024FC9 /* SnapGuideCropViewController.swift */; };
+		DFD5769E237011E600024FC9 /* SnapGuideResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD5769A237011E600024FC9 /* SnapGuideResultView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,14 +65,6 @@
 		8690B60D363A512DF8EC1F0B /* Pods-HFProjectPlaygroundUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HFProjectPlaygroundUITests.release.xcconfig"; path = "Target Support Files/Pods-HFProjectPlaygroundUITests/Pods-HFProjectPlaygroundUITests.release.xcconfig"; sourceTree = "<group>"; };
 		92D8B20185C23F089F93B1EA /* Pods-HFProjectPlaygroundTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HFProjectPlaygroundTests.release.xcconfig"; path = "Target Support Files/Pods-HFProjectPlaygroundTests/Pods-HFProjectPlaygroundTests.release.xcconfig"; sourceTree = "<group>"; };
 		C8922C372311599000325CBC /* AppStoreSearchMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoreSearchMainView.swift; sourceTree = "<group>"; };
-		C8DBDE4E231D1B3200CAD0ED /* SnapGuideCropViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapGuideCropViewController.swift; sourceTree = "<group>"; };
-		C8DBDE50231D1B7800CAD0ED /* SnapGuideCropView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapGuideCropView.swift; sourceTree = "<group>"; };
-		C8DBDE53231D208900CAD0ED /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
-		C8DBDE55231D222300CAD0ED /* SnapGuideResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapGuideResultViewController.swift; sourceTree = "<group>"; };
-		C8DBDE57231D225300CAD0ED /* SnapGuideResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapGuideResultView.swift; sourceTree = "<group>"; };
-		C8DBDE8523266C4600CAD0ED /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		C8DBDE872326780400CAD0ED /* UIUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIUtilities.swift; sourceTree = "<group>"; };
-		C8DBDE882326780400CAD0ED /* MLKitExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MLKitExtensions.swift; sourceTree = "<group>"; };
 		CD5DC52FC974584620B125D5 /* Pods_HFProjectPlayground.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HFProjectPlayground.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF2A84DA230E84EE00C9393B /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		DF2A84DC230E858F00C9393B /* MainCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCell.swift; sourceTree = "<group>"; };
@@ -79,6 +75,9 @@
 		DF2A84F1230FA7B000C9393B /* AppStoreAppsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoreAppsViewController.swift; sourceTree = "<group>"; };
 		DF2A84F3230FA7CF00C9393B /* AppStoreArcadeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoreArcadeViewController.swift; sourceTree = "<group>"; };
 		DF2A84F5230FA7E900C9393B /* AppStoreSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoreSearchViewController.swift; sourceTree = "<group>"; };
+		DF2A84F823135FFF00C9393B /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		DF2A84FA2314D25500C9393B /* AppStoreSearchListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoreSearchListCell.swift; sourceTree = "<group>"; };
+		DF2A84FD2314D35E00C9393B /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		DFCC2CC1230E165B001688ED /* HFProjectPlayground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HFProjectPlayground.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFCC2CC4230E165B001688ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DFCC2CC6230E165B001688ED /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -92,6 +91,15 @@
 		DFCC2CE3230E165C001688ED /* HFProjectPlaygroundUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HFProjectPlaygroundUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFCC2CE7230E165C001688ED /* HFProjectPlaygroundUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HFProjectPlaygroundUITests.swift; sourceTree = "<group>"; };
 		DFCC2CE9230E165C001688ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DFD5768923700A5300024FC9 /* InfinitePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfinitePageViewController.swift; sourceTree = "<group>"; };
+		DFD5768B23700A7E00024FC9 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		DFD5768D23700A9100024FC9 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		DFD5768F23700BB700024FC9 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		DFD5769123700BCD00024FC9 /* FourthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
+		DFD57697237011E600024FC9 /* SnapGuideResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapGuideResultViewController.swift; sourceTree = "<group>"; };
+		DFD57698237011E600024FC9 /* SnapGuideCropView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapGuideCropView.swift; sourceTree = "<group>"; };
+		DFD57699237011E600024FC9 /* SnapGuideCropViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapGuideCropViewController.swift; sourceTree = "<group>"; };
+		DFD5769A237011E600024FC9 /* SnapGuideResultView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapGuideResultView.swift; sourceTree = "<group>"; };
 		EB45D456A46BE36B76CBAF77 /* Pods_HFProjectPlaygroundTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HFProjectPlaygroundTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EECE438A6A8D9E57941BB9A6 /* Pods-HFProjectPlayground.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HFProjectPlayground.release.xcconfig"; path = "Target Support Files/Pods-HFProjectPlayground/Pods-HFProjectPlayground.release.xcconfig"; sourceTree = "<group>"; };
 		F9E53D076EE85A4866AC98DC /* Pods_HFProjectPlaygroundUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HFProjectPlaygroundUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -138,27 +146,6 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		C8DBDE4D231D1A2000CAD0ED /* Snap Guide Adjustment */ = {
-			isa = PBXGroup;
-			children = (
-				C8DBDE882326780400CAD0ED /* MLKitExtensions.swift */,
-				C8DBDE872326780400CAD0ED /* UIUtilities.swift */,
-				C8DBDE4E231D1B3200CAD0ED /* SnapGuideCropViewController.swift */,
-				C8DBDE50231D1B7800CAD0ED /* SnapGuideCropView.swift */,
-				C8DBDE55231D222300CAD0ED /* SnapGuideResultViewController.swift */,
-				C8DBDE57231D225300CAD0ED /* SnapGuideResultView.swift */,
-			);
-			path = "Snap Guide Adjustment";
-			sourceTree = "<group>";
-		};
-		C8DBDE52231D207900CAD0ED /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				C8DBDE53231D208900CAD0ED /* Extension.swift */,
-			);
-			path = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		DC13019319334427EC8F0F7D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -190,8 +177,29 @@
 				DF2A84F3230FA7CF00C9393B /* AppStoreArcadeViewController.swift */,
 				DF2A84F5230FA7E900C9393B /* AppStoreSearchViewController.swift */,
 				C8922C372311599000325CBC /* AppStoreSearchMainView.swift */,
+				DF2A84FA2314D25500C9393B /* AppStoreSearchListCell.swift */,
 			);
 			path = "App Store Sample";
+			sourceTree = "<group>";
+		};
+		DF2A84F723135FD200C9393B /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				DF2A84F823135FFF00C9393B /* APIService.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		DF2A84FC2314D33400C9393B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DFCC2CC4230E165B001688ED /* AppDelegate.swift */,
+				DF2A84FD2314D35E00C9393B /* Extension.swift */,
+				DFCC2CCE230E165C001688ED /* Assets.xcassets */,
+				DFCC2CD0230E165C001688ED /* LaunchScreen.storyboard */,
+				DFCC2CCB230E165B001688ED /* HFProjectPlayground.xcdatamodeld */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		DFCC2CB8230E165B001688ED = {
@@ -219,16 +227,13 @@
 		DFCC2CC3230E165B001688ED /* HFProjectPlayground */ = {
 			isa = PBXGroup;
 			children = (
-				C8DBDE4D231D1A2000CAD0ED /* Snap Guide Adjustment */,
 				DF2A84DE230E864300C9393B /* Main */,
 				DF2A84EA230FA52900C9393B /* App Store Sample */,
-				C8DBDE52231D207900CAD0ED /* Supporting Files */,
-				DFCC2CC4230E165B001688ED /* AppDelegate.swift */,
-				DFCC2CCE230E165C001688ED /* Assets.xcassets */,
-				DFCC2CD0230E165C001688ED /* LaunchScreen.storyboard */,
+				DFD57696237011E600024FC9 /* Snap Guide Adjustment */,
+				DFD5768823700A2B00024FC9 /* Infinite Page View Controller */,
+				DF2A84F723135FD200C9393B /* Utils */,
+				DF2A84FC2314D33400C9393B /* Supporting Files */,
 				DFCC2CD3230E165C001688ED /* Info.plist */,
-				C8DBDE8523266C4600CAD0ED /* GoogleService-Info.plist */,
-				DFCC2CCB230E165B001688ED /* HFProjectPlayground.xcdatamodeld */,
 			);
 			path = HFProjectPlayground;
 			sourceTree = "<group>";
@@ -249,6 +254,29 @@
 				DFCC2CE9230E165C001688ED /* Info.plist */,
 			);
 			path = HFProjectPlaygroundUITests;
+			sourceTree = "<group>";
+		};
+		DFD5768823700A2B00024FC9 /* Infinite Page View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DFD5768923700A5300024FC9 /* InfinitePageViewController.swift */,
+				DFD5768B23700A7E00024FC9 /* FirstViewController.swift */,
+				DFD5768D23700A9100024FC9 /* SecondViewController.swift */,
+				DFD5768F23700BB700024FC9 /* ThirdViewController.swift */,
+				DFD5769123700BCD00024FC9 /* FourthViewController.swift */,
+			);
+			path = "Infinite Page View Controller";
+			sourceTree = "<group>";
+		};
+		DFD57696237011E600024FC9 /* Snap Guide Adjustment */ = {
+			isa = PBXGroup;
+			children = (
+				DFD57697237011E600024FC9 /* SnapGuideResultViewController.swift */,
+				DFD57698237011E600024FC9 /* SnapGuideCropView.swift */,
+				DFD57699237011E600024FC9 /* SnapGuideCropViewController.swift */,
+				DFD5769A237011E600024FC9 /* SnapGuideResultView.swift */,
+			);
+			path = "Snap Guide Adjustment";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -361,7 +389,6 @@
 			files = (
 				DFCC2CD2230E165C001688ED /* LaunchScreen.storyboard in Resources */,
 				DFCC2CCF230E165C001688ED /* Assets.xcassets in Resources */,
-				C8DBDE8623266C4600CAD0ED /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -473,25 +500,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				C8922C382311599000325CBC /* AppStoreSearchMainView.swift in Sources */,
-				C8DBDE4F231D1B3200CAD0ED /* SnapGuideCropViewController.swift in Sources */,
-				C8DBDE51231D1B7800CAD0ED /* SnapGuideCropView.swift in Sources */,
 				DF2A84F6230FA7E900C9393B /* AppStoreSearchViewController.swift in Sources */,
-				C8DBDE56231D222300CAD0ED /* SnapGuideResultViewController.swift in Sources */,
+				DFD5769023700BB700024FC9 /* ThirdViewController.swift in Sources */,
+				DFD5769223700BCD00024FC9 /* FourthViewController.swift in Sources */,
 				DFCC2CCD230E165B001688ED /* HFProjectPlayground.xcdatamodeld in Sources */,
+				DFD5768E23700A9100024FC9 /* SecondViewController.swift in Sources */,
+				DFD5768A23700A5300024FC9 /* InfinitePageViewController.swift in Sources */,
 				DF2A84F4230FA7CF00C9393B /* AppStoreArcadeViewController.swift in Sources */,
 				DF2A84EC230FA5C500C9393B /* AppStoreMainViewController.swift in Sources */,
-				C8DBDE54231D208900CAD0ED /* Extension.swift in Sources */,
 				DF2A84DB230E84EE00C9393B /* MainView.swift in Sources */,
-				C8DBDE58231D225300CAD0ED /* SnapGuideResultView.swift in Sources */,
+				DFD5769C237011E600024FC9 /* SnapGuideCropView.swift in Sources */,
 				DFCC2CC7230E165B001688ED /* MainViewController.swift in Sources */,
+				DF2A84FE2314D35E00C9393B /* Extension.swift in Sources */,
+				DFD5768C23700A7E00024FC9 /* FirstViewController.swift in Sources */,
+				DF2A84FB2314D25500C9393B /* AppStoreSearchListCell.swift in Sources */,
 				DFCC2CC5230E165B001688ED /* AppDelegate.swift in Sources */,
-				C8DBDE8A2326780400CAD0ED /* MLKitExtensions.swift in Sources */,
+				DF2A84F923135FFF00C9393B /* APIService.swift in Sources */,
 				DF2A84F0230FA79600C9393B /* AppStoreGameViewController.swift in Sources */,
 				DF2A84DD230E858F00C9393B /* MainCell.swift in Sources */,
-				C8DBDE892326780400CAD0ED /* UIUtilities.swift in Sources */,
 				DF2A84E0230F725400C9393B /* MainViewModel.swift in Sources */,
 				DF2A84EE230FA75C00C9393B /* AppStoreTodayViewController.swift in Sources */,
+				DFD5769D237011E600024FC9 /* SnapGuideCropViewController.swift in Sources */,
+				DFD5769B237011E600024FC9 /* SnapGuideResultViewController.swift in Sources */,
 				DF2A84F2230FA7B000C9393B /* AppStoreAppsViewController.swift in Sources */,
+				DFD5769E237011E600024FC9 /* SnapGuideResultView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
