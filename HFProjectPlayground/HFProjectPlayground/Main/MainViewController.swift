@@ -28,6 +28,7 @@ class MainViewController: UIViewController {
                             "Form RxSwift",
                             "UICollectionView RxSwift",
                             "App Store Sample",
+                            "Snap Guide Adjustment",
                             "Infinite Page View Controller"
                             ]
         
@@ -49,6 +50,8 @@ class MainViewController: UIViewController {
                 } else if index.row == 3 {
                     UIApplication.shared.keyWindow?.rootViewController = AppStoreMainViewController()
                 } else if index.row == 4 {
+                    UIApplication.shared.keyWindow?.rootViewController = UINavigationController(rootViewController: SnapGuideCropViewController())
+                } else if index.row == 5 {
                     UIApplication.shared.keyWindow?.rootViewController = InfinitePageViewController()
                 }
             }).disposed(by: disposeBag)
