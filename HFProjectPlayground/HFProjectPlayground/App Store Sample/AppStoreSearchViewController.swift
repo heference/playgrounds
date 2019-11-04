@@ -88,37 +88,37 @@ class AppStoreSearchViewController: UIViewController {
         
         
         
-        Observable.combineLatest(mode, keywordRelay, searchRelay, searchResultRelay)
-            .subscribe(onNext: { mode, keyword, keywordList, result in
-                
-                print(keyword)
-                print(keywordList)
-            })
-            .disposed(by: disposeBag)
+//        Observable.combineLatest(mode, keywordRelay, searchRelay, searchResultRelay)
+//            .subscribe(onNext: { mode, keyword, keywordList, result in
+//                
+//                print(keyword)
+//                print(keywordList)
+//            })
+//            .disposed(by: disposeBag)
         
         
-        let dataSource = RxTableViewSectionedReloadDataSource<SectionedViewItem>(configureCell: { _, tableView, indexPath, item in
-            
-            if let viewItem = item as? BannerViewItem {
-                guard let cell = tableView.dequeueReusableCell(withIdentifier: BannerCell.Key, for: indexPath) as? BannerCell else { fatalError() }
-                cell.configureBindings(itemSource: viewItem)
-                return cell
-            } else if let viewItem = item as? CarSpecificationViewItem {
-                guard let cell = tableView.dequeueReusableCell(withIdentifier: CarSpecificationCell.Key, for: indexPath) as? CarSpecificationCell else { fatalError() }
-                cell.configureBindings(itemSource: viewItem)
-                return cell
-            } else if let viewItem = item as? CarBenefitViewItem {
-                guard let cell = tableView.dequeueReusableCell(withIdentifier: CarBenefitCell.Key, for: indexPath) as? CarBenefitCell else { fatalError() }
-                cell.configureBindings(itemSource: viewItem)
-                return cell
-            } else if let viewItem = item as? FavoriteHeaderViewItem {
-                guard let cell = tableView.dequeueReusableCell(withIdentifier: CarFavoritesCell.Key, for: indexPath) as? CarFavoritesCell else { fatalError() }
-                cell.configureBindings(itemSource: viewItem)
-                return cell
-            } else {
-                return UITableViewCell()
-            }
-        })
+//        let dataSource = RxTableViewSectionedReloadDataSource<SectionedViewItem>(configureCell: { _, tableView, indexPath, item in
+//            
+//            if let viewItem = item as? BannerViewItem {
+//                guard let cell = tableView.dequeueReusableCell(withIdentifier: BannerCell.Key, for: indexPath) as? BannerCell else { fatalError() }
+//                cell.configureBindings(itemSource: viewItem)
+//                return cell
+//            } else if let viewItem = item as? CarSpecificationViewItem {
+//                guard let cell = tableView.dequeueReusableCell(withIdentifier: CarSpecificationCell.Key, for: indexPath) as? CarSpecificationCell else { fatalError() }
+//                cell.configureBindings(itemSource: viewItem)
+//                return cell
+//            } else if let viewItem = item as? CarBenefitViewItem {
+//                guard let cell = tableView.dequeueReusableCell(withIdentifier: CarBenefitCell.Key, for: indexPath) as? CarBenefitCell else { fatalError() }
+//                cell.configureBindings(itemSource: viewItem)
+//                return cell
+//            } else if let viewItem = item as? FavoriteHeaderViewItem {
+//                guard let cell = tableView.dequeueReusableCell(withIdentifier: CarFavoritesCell.Key, for: indexPath) as? CarFavoritesCell else { fatalError() }
+//                cell.configureBindings(itemSource: viewItem)
+//                return cell
+//            } else {
+//                return UITableViewCell()
+//            }
+//        })
         
         
         
