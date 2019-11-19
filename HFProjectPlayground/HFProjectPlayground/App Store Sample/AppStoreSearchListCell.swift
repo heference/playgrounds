@@ -62,7 +62,7 @@ class AppStoreSearchListCell: UITableViewCell {
         let button = UIButton()
         button.translatesAutoresizingMaskIntoConstraints = false
         button.backgroundColor = UIColor.lightGray
-        button.setTitleColor(UIColor.iOSDefault.blue, for: .normal)
+        button.setTitleColor(UIColor.blue, for: .normal)
         button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 15)
         button.setTitle("열기", for: .normal)
         return button

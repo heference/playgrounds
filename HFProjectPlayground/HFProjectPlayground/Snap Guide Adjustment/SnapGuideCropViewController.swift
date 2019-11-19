@@ -10,7 +10,7 @@ import UIKit
 import RxSwift
 import RxCocoa
 import Vision
-//import Firebase
+import Firebase
 
 class SnapGuideCropViewController: UIViewController {
     
