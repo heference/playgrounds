@@ -29,7 +29,8 @@ class MainViewController: UIViewController {
                             "UICollectionView RxSwift",
                             "App Store Sample",
                             "Snap Guide Adjustment",
-                            "Infinite Page View Controller"
+                            "Infinite Page View Controller",
+                            "Text Recognition View Controller"
                             ]
         
         Observable.of(rxCategories)
@@ -53,6 +54,8 @@ class MainViewController: UIViewController {
                     UIApplication.shared.keyWindow?.rootViewController = UINavigationController(rootViewController: SnapGuideCropViewController())
                 } else if index.row == 5 {
                     UIApplication.shared.keyWindow?.rootViewController = InfinitePageViewController()
+                } else if index.row == 6 {
+                    UIApplication.shared.keyWindow?.rootViewController = TextRecognizeViewController()
                 }
             }).disposed(by: disposeBag)
         

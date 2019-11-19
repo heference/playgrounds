@@ -36,10 +36,10 @@ class SnapGuideCropView: UIView {
         self.bottomAnchor(equalTo: superView.safeAreaLayoutGuide.bottomAnchor)
         
         self.addSubview(imageView)
-        imageView.topAnchor(equalTo: self.topAnchor, constant: 30)
-        imageView.leadingAnchor(equalTo: self.leadingAnchor, constant: 15)
-        imageView.trailingAnchor(equalTo: self.trailingAnchor, constant: -15)
-        imageView.bottomAnchor(equalTo: self.centerYAnchor)
+        imageView.topAnchor(equalTo: self.topAnchor)
+        imageView.leadingAnchor(equalTo: self.leadingAnchor)
+        imageView.trailingAnchor(equalTo: self.trailingAnchor)
+        imageView.bottomAnchor(equalTo: self.bottomAnchor)
         
         self.addSubview(button)
         button.heightAnchor(equalToConstant: 30)

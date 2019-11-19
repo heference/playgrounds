@@ -10,7 +10,13 @@
 		081447C34D5AAFA8C10281A3 /* Pods_HFProjectPlayground.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD5DC52FC974584620B125D5 /* Pods_HFProjectPlayground.framework */; };
 		6CF8EC25DEE71BCA82E6FA88 /* Pods_HFProjectPlaygroundUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9E53D076EE85A4866AC98DC /* Pods_HFProjectPlaygroundUITests.framework */; };
 		C33B25071F7B753ACAB8746F /* Pods_HFProjectPlaygroundTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB45D456A46BE36B76CBAF77 /* Pods_HFProjectPlaygroundTests.framework */; };
+		C814F47323841A6000D51F62 /* TextRecognizeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C814F47223841A6000D51F62 /* TextRecognizeViewController.swift */; };
+		C87C443E237030AA00F5D77F /* UIUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87C443C237030AA00F5D77F /* UIUtilities.swift */; };
+		C87C443F237030AA00F5D77F /* MLKitExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87C443D237030AA00F5D77F /* MLKitExtensions.swift */; };
+		C87C44412370322E00F5D77F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C87C44402370322E00F5D77F /* GoogleService-Info.plist */; };
+		C87C44432370330200F5D77F /* FifthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87C44422370330200F5D77F /* FifthViewController.swift */; };
 		C8922C382311599000325CBC /* AppStoreSearchMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8922C372311599000325CBC /* AppStoreSearchMainView.swift */; };
+		C8B0416023841EB600E4E744 /* RxExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B0415F23841EB600E4E744 /* RxExtension.swift */; };
 		DF2A84DB230E84EE00C9393B /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2A84DA230E84EE00C9393B /* MainView.swift */; };
 		DF2A84DD230E858F00C9393B /* MainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2A84DC230E858F00C9393B /* MainCell.swift */; };
 		DF2A84E0230F725400C9393B /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2A84DF230F725400C9393B /* MainViewModel.swift */; };
@@ -64,7 +70,13 @@
 		4FB900212B482967F13E441B /* Pods-HFProjectPlayground.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HFProjectPlayground.debug.xcconfig"; path = "Target Support Files/Pods-HFProjectPlayground/Pods-HFProjectPlayground.debug.xcconfig"; sourceTree = "<group>"; };
 		8690B60D363A512DF8EC1F0B /* Pods-HFProjectPlaygroundUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HFProjectPlaygroundUITests.release.xcconfig"; path = "Target Support Files/Pods-HFProjectPlaygroundUITests/Pods-HFProjectPlaygroundUITests.release.xcconfig"; sourceTree = "<group>"; };
 		92D8B20185C23F089F93B1EA /* Pods-HFProjectPlaygroundTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HFProjectPlaygroundTests.release.xcconfig"; path = "Target Support Files/Pods-HFProjectPlaygroundTests/Pods-HFProjectPlaygroundTests.release.xcconfig"; sourceTree = "<group>"; };
+		C814F47223841A6000D51F62 /* TextRecognizeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextRecognizeViewController.swift; sourceTree = "<group>"; };
+		C87C443C237030AA00F5D77F /* UIUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIUtilities.swift; sourceTree = "<group>"; };
+		C87C443D237030AA00F5D77F /* MLKitExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MLKitExtensions.swift; sourceTree = "<group>"; };
+		C87C44402370322E00F5D77F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C87C44422370330200F5D77F /* FifthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FifthViewController.swift; sourceTree = "<group>"; };
 		C8922C372311599000325CBC /* AppStoreSearchMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoreSearchMainView.swift; sourceTree = "<group>"; };
+		C8B0415F23841EB600E4E744 /* RxExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxExtension.swift; sourceTree = "<group>"; };
 		CD5DC52FC974584620B125D5 /* Pods_HFProjectPlayground.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HFProjectPlayground.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF2A84DA230E84EE00C9393B /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		DF2A84DC230E858F00C9393B /* MainCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCell.swift; sourceTree = "<group>"; };
@@ -144,6 +156,15 @@
 				8690B60D363A512DF8EC1F0B /* Pods-HFProjectPlaygroundUITests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		C814F47123840E2800D51F62 /* Text Recognition */ = {
+			isa = PBXGroup;
+			children = (
+				C814F47223841A6000D51F62 /* TextRecognizeViewController.swift */,
+				C8B0415F23841EB600E4E744 /* RxExtension.swift */,
+			);
+			path = "Text Recognition";
 			sourceTree = "<group>";
 		};
 		DC13019319334427EC8F0F7D /* Frameworks */ = {
@@ -231,8 +252,10 @@
 				DF2A84EA230FA52900C9393B /* App Store Sample */,
 				DFD57696237011E600024FC9 /* Snap Guide Adjustment */,
 				DFD5768823700A2B00024FC9 /* Infinite Page View Controller */,
+				C814F47123840E2800D51F62 /* Text Recognition */,
 				DF2A84F723135FD200C9393B /* Utils */,
 				DF2A84FC2314D33400C9393B /* Supporting Files */,
+				C87C44402370322E00F5D77F /* GoogleService-Info.plist */,
 				DFCC2CD3230E165C001688ED /* Info.plist */,
 			);
 			path = HFProjectPlayground;
@@ -264,6 +287,7 @@
 				DFD5768D23700A9100024FC9 /* SecondViewController.swift */,
 				DFD5768F23700BB700024FC9 /* ThirdViewController.swift */,
 				DFD5769123700BCD00024FC9 /* FourthViewController.swift */,
+				C87C44422370330200F5D77F /* FifthViewController.swift */,
 			);
 			path = "Infinite Page View Controller";
 			sourceTree = "<group>";
@@ -271,6 +295,8 @@
 		DFD57696237011E600024FC9 /* Snap Guide Adjustment */ = {
 			isa = PBXGroup;
 			children = (
+				C87C443D237030AA00F5D77F /* MLKitExtensions.swift */,
+				C87C443C237030AA00F5D77F /* UIUtilities.swift */,
 				DFD57697237011E600024FC9 /* SnapGuideResultViewController.swift */,
 				DFD57698237011E600024FC9 /* SnapGuideCropView.swift */,
 				DFD57699237011E600024FC9 /* SnapGuideCropViewController.swift */,
@@ -389,6 +415,7 @@
 			files = (
 				DFCC2CD2230E165C001688ED /* LaunchScreen.storyboard in Resources */,
 				DFCC2CCF230E165C001688ED /* Assets.xcassets in Resources */,
+				C87C44412370322E00F5D77F /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -506,6 +533,7 @@
 				DFCC2CCD230E165B001688ED /* HFProjectPlayground.xcdatamodeld in Sources */,
 				DFD5768E23700A9100024FC9 /* SecondViewController.swift in Sources */,
 				DFD5768A23700A5300024FC9 /* InfinitePageViewController.swift in Sources */,
+				C814F47323841A6000D51F62 /* TextRecognizeViewController.swift in Sources */,
 				DF2A84F4230FA7CF00C9393B /* AppStoreArcadeViewController.swift in Sources */,
 				DF2A84EC230FA5C500C9393B /* AppStoreMainViewController.swift in Sources */,
 				DF2A84DB230E84EE00C9393B /* MainView.swift in Sources */,
@@ -513,10 +541,14 @@
 				DFCC2CC7230E165B001688ED /* MainViewController.swift in Sources */,
 				DF2A84FE2314D35E00C9393B /* Extension.swift in Sources */,
 				DFD5768C23700A7E00024FC9 /* FirstViewController.swift in Sources */,
+				C87C443F237030AA00F5D77F /* MLKitExtensions.swift in Sources */,
 				DF2A84FB2314D25500C9393B /* AppStoreSearchListCell.swift in Sources */,
 				DFCC2CC5230E165B001688ED /* AppDelegate.swift in Sources */,
+				C87C443E237030AA00F5D77F /* UIUtilities.swift in Sources */,
+				C8B0416023841EB600E4E744 /* RxExtension.swift in Sources */,
 				DF2A84F923135FFF00C9393B /* APIService.swift in Sources */,
 				DF2A84F0230FA79600C9393B /* AppStoreGameViewController.swift in Sources */,
+				C87C44432370330200F5D77F /* FifthViewController.swift in Sources */,
 				DF2A84DD230E858F00C9393B /* MainCell.swift in Sources */,
 				DF2A84E0230F725400C9393B /* MainViewModel.swift in Sources */,
 				DF2A84EE230FA75C00C9393B /* AppStoreTodayViewController.swift in Sources */,

@@ -6,6 +6,16 @@
 //  Copyright © 2019 sfp. All rights reserved.
 //
 
+/*
+ TODO 미구현사항
+ 1. Page Swipe 시 Collection View Index Sync 조정
+ 2. Collection View Swipe 시 Page Index Sync 조정
+ 3. Collection Tabbar Page 스크롤링 구현
+ 4. Collection View didSelect Row 기능 구현
+ 5. Collection View Infinite 좌측 스크롤 구현 (InfiniteSize / 2)
+ 
+*/
+
 import UIKit
 
 class InfinitePageViewController: UIViewController {
@@ -17,13 +27,15 @@ class InfinitePageViewController: UIViewController {
         FirstViewController(),
         SecondViewController(),
         ThirdViewController(),
-        FourthViewController()
+        FourthViewController(),
+        FifthViewController()
     ]
     
     let tabbarCollectionView: UICollectionView = {
         let flowLayout = UICollectionViewFlowLayout()
         flowLayout.scrollDirection = UICollectionView.ScrollDirection.horizontal
-        flowLayout.sectionInset = UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 10)
+        flowLayout.minimumInteritemSpacing = 0
+        flowLayout.minimumLineSpacing = 0
         
         let view = UICollectionView(frame: .zero, collectionViewLayout: flowLayout)
         view.translatesAutoresizingMaskIntoConstraints = false
@@ -90,7 +102,7 @@ extension InfinitePageViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "TabbarCollectionViewCell", for: indexPath) as! TabbarCollectionViewCell
-        cell.title.text = "\(indexPath.row % 4)"
+        cell.title.text = "\(indexPath.row % pages.count)"
         return cell
     }
 }
@@ -98,24 +110,34 @@ extension InfinitePageViewController: UICollectionViewDataSource {
 extension InfinitePageViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let width = UIScreen.main.bounds.width
-        return CGSize(width: width/4, height: 50)
+        return CGSize(width: width/CGFloat(pages.count), height: 50)
     }
 }
 
 extension InfinitePageViewController: UIPageViewControllerDelegate {
+    func pageViewController(_ pageViewController: UIPageViewController, willTransitionTo pendingViewControllers: [UIViewController]) {
+        
+    }
     
+    func pageViewController(_ pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool) {
+        
+    }
 }
 
 extension InfinitePageViewController: UIPageViewControllerDataSource {
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
         
-        
         guard var index = pages.firstIndex(of: viewController) else { return nil }
+        print(index)
+        
+        
         let first = pages.startIndex
-        self.tabbarCollectionView.scrollToItem(at: pageIndexPath, at: .centeredHorizontally, animated: true)
+        
         
         index -= 1
         pageIndexPath.row -= 1
+        
+        self.tabbarCollectionView.scrollToItem(at: pageIndexPath, at: .centeredHorizontally, animated: true)
         
         if index == first {
             return pages[first]
@@ -129,11 +151,14 @@ extension InfinitePageViewController: UIPageViewControllerDataSource {
     
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
         guard var index = pages.firstIndex(of: viewController) else { return nil }
+        print(index)
+        
         let last = pages.endIndex-1
-        self.tabbarCollectionView.scrollToItem(at: pageIndexPath, at: .centeredHorizontally, animated: true)
         
         index += 1
         pageIndexPath.row += 1
+        
+        self.tabbarCollectionView.scrollToItem(at: pageIndexPath, at: .centeredHorizontally, animated: true)
         
         if index == last{
             return pages[last]
@@ -172,13 +197,5 @@ class TabbarCollectionViewCell: UICollectionViewCell {
     }
 }
 
-/*
- TODO 미구현사항
- 1. Page Swipe 시 Collection View Index Sync 조정
- 2. Collection View Swipe 시 Page Index Sync 조정
- 3. Collection Tabbar Page 스크롤링 구현
- 4. Collection View didSelect Row 기능 구현
- 5. Collection View Infinite 좌측 스크롤 구현 (InfiniteSize / 2)
- 
-*/
+
 

@@ -8,17 +8,16 @@ target 'HFProjectPlayground' do
   # RxSwift
   pod 'RxSwift'
   pod 'RxCocoa'
-<<<<<<< HEAD
+  pod 'RxDataSources'
   
   # Google MLKit
   pod 'Firebase/Analytics'
   pod 'Firebase/MLVision'
   pod 'Firebase/MLVisionObjectDetection'
   
-=======
-  pod 'RxDataSources'
-
->>>>>>> 6d53b10e5e950f6683fa179c4462ef14da600539
+  # Text Recognition
+  pod 'SwiftOCR'
+  
   # Pods for HFProjectPlayground
 
   target 'HFProjectPlaygroundTests' do
@@ -32,3 +31,5 @@ target 'HFProjectPlayground' do
   end
 
 end
+
+
