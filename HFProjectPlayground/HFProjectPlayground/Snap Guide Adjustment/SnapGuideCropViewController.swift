@@ -16,131 +16,107 @@ class SnapGuideCropViewController: UIViewController {
     
     var disposeBag = DisposeBag()
     let baseView = SnapGuideCropView()
+    var selectedImage = BehaviorRelay<UIImage>(value: UIImage())
     
     override func viewDidLoad() {
         super.viewDidLoad()
         baseView.layout(superView: self.view)
         
         baseView.button.rx.tap
-            //Map Snap Crop Logic....
-            //Subscribe Image Bind And Navigating
             .subscribe(onNext: { _ in
-                self.crop()
-//                self.navigationController?.pushViewController(SnapGuideResultViewController(), animated: true)
+                self.bindImagePickerViewController()
             })
             .disposed(by: disposeBag)
     }
     
-    func crop() {
-        // Multiple object detection in static images
-        let options = VisionObjectDetectorOptions()
-        options.detectorMode = .singleImage
-        
-//        // Live detection and tracking
-//        options.detectorMode = .stream
-        options.shouldEnableMultipleObjects = true
-        options.shouldEnableClassification = true  // Optional
-        
-        // Or, to change the default settings:
-        let objectDetector = Vision.vision().objectDetector(options: options)
-        
-        let sampleImage = baseView.imageView.image!
-        let newImage = UIImage(cgImage: sampleImage.cgImage!, scale: sampleImage.scale, orientation: .up)
-        
-        let image = VisionImage(image: newImage)
-        
-        objectDetector.process(image) { detectedObjects, error in
-            guard error == nil else {
-                // Error.
-                return
-            }
-            guard let detectedObjects = detectedObjects, !detectedObjects.isEmpty else {
-                // No objects detected.
-                return
-            }
+    func bindImagePickerViewController() {
+        UIImagePickerController.rx.createWithParent(self) { picker in
+            picker.sourceType = .photoLibrary
+            picker.allowsEditing = false
+        }
+        .subscribeOn(MainScheduler.instance)
+        .flatMap{ $0.rx.didFinishPickingMediaWithInfo }
+        .take(1)
+        .map { info in
+            return info[UIImagePickerController.InfoKey.originalImage.rawValue] as! UIImage
+        }.subscribe(onNext: { image in
             
-            // Success. Get object info here.
-            // ...
-            // detectedObjects contains one item if multiple object detection wasn't enabled.
-//            for obj in detectedObjects {
-//
-//                let bounds = obj.frame
-//                let id = obj.trackingID
-//
-//                // If classification was enabled:
-//                let category = obj.classificationCategory
-//                let confidence = obj.confidence
+            guard let cgImage = image.cgImage else { return }
+            let request = self.createCoreMLRequest()
+            request.imageCropAndScaleOption = .centerCrop
             
-                
-                //Add Bounding Box
-//                let boundingBox = UIView()
-//                boundingBox.bounds = bounds
-//                boundingBox.backgroundColor = UIColor.clear
-//                boundingBox.layer.borderColor = UIColor.red.cgColor
-//                boundingBox.layer.borderWidth = 1
-//
-//                self.baseView.imageView.addSubview(boundingBox)
-                
-                
-//                let boundingBox = CALayer()
-//                boundingBox.frame = bounds
-//                boundingBox.frame.origin = CGPoint(x: 0, y: 0)
-//                boundingBox.borderColor = UIColor.red.cgColor
-//                boundingBox.borderWidth = 1
-//                boundingBox.masksToBounds = true
+            let handler = VNImageRequestHandler(cgImage: cgImage, options: [:])
+            try? handler.perform([request])
+        })
+        .disposed(by: self.disposeBag)
+    }
+    
+    func createCoreMLRequest() -> VNCoreMLRequest {
+        let model = try? VNCoreMLModel(for: DeepLabV3().model)
+        let request = VNCoreMLRequest(model: model!) { (request, error) in
+            self.processSegmentation(for: request, error: error)
+        }
+        return request
+    }
+    
+    func processSegmentation(for request: VNRequest, error: Error?) {
+        DispatchQueue.main.async {
+            guard let results = request.results else { return }
+            if let observations = request.results as? [VNCoreMLFeatureValueObservation],
+                let segmentationmap = observations.first?.featureValue.multiArrayValue {
+                self.baseView.drawingView.segmentationmap = SegmentationResultMLMultiArray(mlMultiArray: segmentationmap)
+            }
+        }
+    }
+}
 
-//                self.baseView.imageView.layer.addSublayer(boundingBox)
-//                print("frame: \(bounds)")
-//                print("confidence : \(confidence)")
-//            }
-            
-            let transform = self.transformMatrix()
-            
-            detectedObjects.forEach { object in
-                self.drawFrame(object.frame, in: .green, transform: transform)
-                
-                let transformedRect = object.frame.applying(transform)
-                UIUtilities.addRectangle(
-                    transformedRect,
-                    to: self.baseView,
-                    color: .green
-                )
-            }
-            
+class DrawingSegmentationView: UIView {
+    
+    static private var colors: [Int32: UIColor] = [:]
+    
+    func segmentationColor(with index: Int32) -> UIColor {
+        if let color = DrawingSegmentationView.colors[index] {
+            return color
+        } else {
+            let color = UIColor(hue: CGFloat(index) / CGFloat(30), saturation: 1, brightness: 1, alpha: 0.5)
+            print(index)
+            DrawingSegmentationView.colors[index] = color
+            return color
         }
     }
     
-    private func transformMatrix() -> CGAffineTransform {
-        guard let image = baseView.imageView.image else { return CGAffineTransform() }
-        let imageViewWidth = baseView.imageView.frame.size.width
-        let imageViewHeight = baseView.imageView.frame.size.height
-        let imageWidth = image.size.width
-        let imageHeight = image.size.height
-        
-        let imageViewAspectRatio = imageViewWidth / imageViewHeight
-        let imageAspectRatio = imageWidth / imageHeight
-        let scale = (imageViewAspectRatio > imageAspectRatio) ?
-            imageViewHeight / imageHeight :
-            imageViewWidth / imageWidth
-        
-        // Image view's `contentMode` is `scaleAspectFit`, which scales the image to fit the size of the
-        // image view by maintaining the aspect ratio. Multiple by `scale` to get image's original size.
-        let scaledImageWidth = imageWidth * scale
-        let scaledImageHeight = imageHeight * scale
-        let xValue = (imageViewWidth - scaledImageWidth) / CGFloat(2.0)
-        let yValue = (imageViewHeight - scaledImageHeight) / CGFloat(2.0)
-        
-        var transform = CGAffineTransform.identity.translatedBy(x: xValue, y: yValue)
-        transform = transform.scaledBy(x: scale, y: scale)
-        return transform
+    var segmentationmap: SegmentationResultMLMultiArray? = nil {
+        didSet {
+            self.setNeedsDisplay()
+        }
     }
     
-    private func drawFrame(_ frame: CGRect, in color: UIColor, transform: CGAffineTransform) {
-        let transformedRect = frame.applying(transform)
-        UIUtilities.addRectangle(
-            transformedRect,
-            to: self.baseView,
-            color: color
-        )
-    }
+    override func draw(_ rect: CGRect) {
+        
+        if let ctx = UIGraphicsGetCurrentContext() {
+            
+            ctx.clear(rect);
+            
+            guard let segmentationmap = self.segmentationmap else { return }
+            
+            let size = self.bounds.size
+            let segmentationmapWidthSize = segmentationmap.segmentationmapWidthSize
+            let segmentationmapHeightSize = segmentationmap.segmentationmapHeightSize
+            let w = size.width / CGFloat(segmentationmapWidthSize)
+            let h = size.height / CGFloat(segmentationmapHeightSize)
+            
+            for j in 0..<segmentationmapHeightSize {
+                for i in 0..<segmentationmapWidthSize {
+                    let value = segmentationmap[j, i].int32Value
+
+                    let rect: CGRect = CGRect(x: CGFloat(i) * w, y: CGFloat(j) * h, width: w, height: h)
+
+                    let color: UIColor = segmentationColor(with: value)
+
+                    color.setFill()
+                    UIRectFill(rect)
+                }
+            }
+        }
+    } // end of draw(rect:)
 }

@@ -10,11 +10,9 @@ import UIKit
 
 class SnapGuideCropView: UIView {
     
-    let imageView: UIImageView = {
-        let view = UIImageView()
+    let drawingView: DrawingSegmentationView = {
+        let view = DrawingSegmentationView()
         view.translatesAutoresizingMaskIntoConstraints = false
-        view.image = UIImage(named: "sample1")
-        view.contentMode = UIView.ContentMode.scaleAspectFit
         return view
     }()
     
@@ -35,17 +33,19 @@ class SnapGuideCropView: UIView {
         self.trailingAnchor(equalTo: superView.safeAreaLayoutGuide.trailingAnchor)
         self.bottomAnchor(equalTo: superView.safeAreaLayoutGuide.bottomAnchor)
         
-        self.addSubview(imageView)
-        imageView.topAnchor(equalTo: self.topAnchor)
-        imageView.leadingAnchor(equalTo: self.leadingAnchor)
-        imageView.trailingAnchor(equalTo: self.trailingAnchor)
-        imageView.bottomAnchor(equalTo: self.bottomAnchor)
-        
         self.addSubview(button)
         button.heightAnchor(equalToConstant: 30)
         button.leadingAnchor(equalTo: self.leadingAnchor, constant: 15)
         button.trailingAnchor(equalTo: self.trailingAnchor, constant: -15)
         button.bottomAnchor(equalTo: self.bottomAnchor, constant: -30)
+        
+        self.addSubview(drawingView)
+        drawingView.topAnchor(equalTo: self.topAnchor)
+        drawingView.leadingAnchor(equalTo: self.leadingAnchor)
+        drawingView.trailingAnchor(equalTo: self.trailingAnchor)
+        drawingView.bottomAnchor(equalTo: button.topAnchor, constant: -15)
+        
+        
     }
     
     override init(frame: CGRect) {

@@ -9,7 +9,6 @@
 import RxSwift
 import RxCocoa
 import UIKit
-import SwiftOCR
 
 class TextRecognizeViewController: UIViewController {
     
@@ -66,11 +65,6 @@ class TextRecognizeViewController: UIViewController {
         
         selectButton.rx.tap.subscribe(onNext: { _ in
 //                self.bindImagePickerViewController()
-                let swiftOCRInstance = SwiftOCR()
-                let image = UIImage(named: "sample")!
-                swiftOCRInstance.recognize(image) { recognizedString in
-                    print(recognizedString)
-                }
             }).disposed(by: disposeBag)
         
         selectedImage.subscribe(onNext: { image in
@@ -90,11 +84,6 @@ class TextRecognizeViewController: UIViewController {
             return info[UIImagePickerController.InfoKey.originalImage.rawValue] as! UIImage
         }.subscribe(onNext: { image in
             self.selectedImage.accept(image)
-            
-            let swiftOCRInstance = SwiftOCR()
-            swiftOCRInstance.recognize(image) { recognizedString in
-                print(recognizedString)
-            }
             
         })
         .disposed(by: self.disposeBag)

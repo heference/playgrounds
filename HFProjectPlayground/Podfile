@@ -16,7 +16,7 @@ target 'HFProjectPlayground' do
   pod 'Firebase/MLVisionObjectDetection'
   
   # Text Recognition
-  pod 'SwiftOCR'
+#  pod 'SwiftOCR'
   
   # Pods for HFProjectPlayground
 

@@ -25,8 +25,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.makeKeyAndVisible()
         
         let rootViewController = UINavigationController(rootViewController: MainViewController())
-        
         window?.rootViewController = rootViewController
+        
+        // Settig RxImagePickerDelegateProxy
+        RxImagePickerDelegateProxy.register { RxImagePickerDelegateProxy(imagePicker: $0) }
         
         return true
     }

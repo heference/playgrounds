@@ -11,12 +11,12 @@
 		6CF8EC25DEE71BCA82E6FA88 /* Pods_HFProjectPlaygroundUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9E53D076EE85A4866AC98DC /* Pods_HFProjectPlaygroundUITests.framework */; };
 		C33B25071F7B753ACAB8746F /* Pods_HFProjectPlaygroundTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB45D456A46BE36B76CBAF77 /* Pods_HFProjectPlaygroundTests.framework */; };
 		C814F47323841A6000D51F62 /* TextRecognizeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C814F47223841A6000D51F62 /* TextRecognizeViewController.swift */; };
-		C87C443E237030AA00F5D77F /* UIUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87C443C237030AA00F5D77F /* UIUtilities.swift */; };
-		C87C443F237030AA00F5D77F /* MLKitExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87C443D237030AA00F5D77F /* MLKitExtensions.swift */; };
 		C87C44412370322E00F5D77F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C87C44402370322E00F5D77F /* GoogleService-Info.plist */; };
 		C87C44432370330200F5D77F /* FifthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87C44422370330200F5D77F /* FifthViewController.swift */; };
 		C8922C382311599000325CBC /* AppStoreSearchMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8922C372311599000325CBC /* AppStoreSearchMainView.swift */; };
 		C8B0416023841EB600E4E744 /* RxExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B0415F23841EB600E4E744 /* RxExtension.swift */; };
+		C8B041632386B06300E4E744 /* DeepLabV3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = C8B041622386B06200E4E744 /* DeepLabV3.mlmodel */; };
+		C8B041652386C4C200E4E744 /* SegmentationResultMLMultiArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B041642386C4C200E4E744 /* SegmentationResultMLMultiArray.swift */; };
 		DF2A84DB230E84EE00C9393B /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2A84DA230E84EE00C9393B /* MainView.swift */; };
 		DF2A84DD230E858F00C9393B /* MainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2A84DC230E858F00C9393B /* MainCell.swift */; };
 		DF2A84E0230F725400C9393B /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2A84DF230F725400C9393B /* MainViewModel.swift */; };
@@ -71,12 +71,12 @@
 		8690B60D363A512DF8EC1F0B /* Pods-HFProjectPlaygroundUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HFProjectPlaygroundUITests.release.xcconfig"; path = "Target Support Files/Pods-HFProjectPlaygroundUITests/Pods-HFProjectPlaygroundUITests.release.xcconfig"; sourceTree = "<group>"; };
 		92D8B20185C23F089F93B1EA /* Pods-HFProjectPlaygroundTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HFProjectPlaygroundTests.release.xcconfig"; path = "Target Support Files/Pods-HFProjectPlaygroundTests/Pods-HFProjectPlaygroundTests.release.xcconfig"; sourceTree = "<group>"; };
 		C814F47223841A6000D51F62 /* TextRecognizeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextRecognizeViewController.swift; sourceTree = "<group>"; };
-		C87C443C237030AA00F5D77F /* UIUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIUtilities.swift; sourceTree = "<group>"; };
-		C87C443D237030AA00F5D77F /* MLKitExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MLKitExtensions.swift; sourceTree = "<group>"; };
 		C87C44402370322E00F5D77F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C87C44422370330200F5D77F /* FifthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FifthViewController.swift; sourceTree = "<group>"; };
 		C8922C372311599000325CBC /* AppStoreSearchMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoreSearchMainView.swift; sourceTree = "<group>"; };
 		C8B0415F23841EB600E4E744 /* RxExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxExtension.swift; sourceTree = "<group>"; };
+		C8B041622386B06200E4E744 /* DeepLabV3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = DeepLabV3.mlmodel; sourceTree = "<group>"; };
+		C8B041642386C4C200E4E744 /* SegmentationResultMLMultiArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentationResultMLMultiArray.swift; sourceTree = "<group>"; };
 		CD5DC52FC974584620B125D5 /* Pods_HFProjectPlayground.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HFProjectPlayground.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF2A84DA230E84EE00C9393B /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		DF2A84DC230E858F00C9393B /* MainCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCell.swift; sourceTree = "<group>"; };
@@ -165,6 +165,15 @@
 				C8B0415F23841EB600E4E744 /* RxExtension.swift */,
 			);
 			path = "Text Recognition";
+			sourceTree = "<group>";
+		};
+		C8B041612386B04B00E4E744 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C8B041622386B06200E4E744 /* DeepLabV3.mlmodel */,
+				C8B041642386C4C200E4E744 /* SegmentationResultMLMultiArray.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		DC13019319334427EC8F0F7D /* Frameworks */ = {
@@ -295,8 +304,7 @@
 		DFD57696237011E600024FC9 /* Snap Guide Adjustment */ = {
 			isa = PBXGroup;
 			children = (
-				C87C443D237030AA00F5D77F /* MLKitExtensions.swift */,
-				C87C443C237030AA00F5D77F /* UIUtilities.swift */,
+				C8B041612386B04B00E4E744 /* Model */,
 				DFD57697237011E600024FC9 /* SnapGuideResultViewController.swift */,
 				DFD57698237011E600024FC9 /* SnapGuideCropView.swift */,
 				DFD57699237011E600024FC9 /* SnapGuideCropViewController.swift */,
@@ -537,20 +545,20 @@
 				DF2A84F4230FA7CF00C9393B /* AppStoreArcadeViewController.swift in Sources */,
 				DF2A84EC230FA5C500C9393B /* AppStoreMainViewController.swift in Sources */,
 				DF2A84DB230E84EE00C9393B /* MainView.swift in Sources */,
+				C8B041652386C4C200E4E744 /* SegmentationResultMLMultiArray.swift in Sources */,
 				DFD5769C237011E600024FC9 /* SnapGuideCropView.swift in Sources */,
 				DFCC2CC7230E165B001688ED /* MainViewController.swift in Sources */,
 				DF2A84FE2314D35E00C9393B /* Extension.swift in Sources */,
 				DFD5768C23700A7E00024FC9 /* FirstViewController.swift in Sources */,
-				C87C443F237030AA00F5D77F /* MLKitExtensions.swift in Sources */,
 				DF2A84FB2314D25500C9393B /* AppStoreSearchListCell.swift in Sources */,
 				DFCC2CC5230E165B001688ED /* AppDelegate.swift in Sources */,
-				C87C443E237030AA00F5D77F /* UIUtilities.swift in Sources */,
 				C8B0416023841EB600E4E744 /* RxExtension.swift in Sources */,
 				DF2A84F923135FFF00C9393B /* APIService.swift in Sources */,
 				DF2A84F0230FA79600C9393B /* AppStoreGameViewController.swift in Sources */,
 				C87C44432370330200F5D77F /* FifthViewController.swift in Sources */,
 				DF2A84DD230E858F00C9393B /* MainCell.swift in Sources */,
 				DF2A84E0230F725400C9393B /* MainViewModel.swift in Sources */,
+				C8B041632386B06300E4E744 /* DeepLabV3.mlmodel in Sources */,
 				DF2A84EE230FA75C00C9393B /* AppStoreTodayViewController.swift in Sources */,
 				DFD5769D237011E600024FC9 /* SnapGuideCropViewController.swift in Sources */,
 				DFD5769B237011E600024FC9 /* SnapGuideResultViewController.swift in Sources */,
